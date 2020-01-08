@@ -14,3 +14,7 @@ transform:rotate(10deg);
 margin-top:50px; 
 border-radius: 100px 0 100px 0;
 }
+
+.box{
+ float: center; 
+}
