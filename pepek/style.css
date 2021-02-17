@@ -1,0 +1,20 @@
+.header{
+text-align: center;
+border-radius: 100px;
+background-color: lightBlue;
+}
+
+.center{
+text-align: center;
+}
+
+.img{
+border: solid;
+transform:rotate(5deg);
+margin-top:50px; 
+border-radius: 100px 0 100px 0;
+}
+
+.box{
+float: center; 
+}
