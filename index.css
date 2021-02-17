@@ -1,0 +1,16 @@
+/* Site-specific */
+/***********************************************/
+#show{
+    background: rgb(255,255,255);
+    width: 10%;
+}
+#hide {
+    display: none;
+}
+
+#show:hover + #hide {
+    display: block;
+    color: white;
+    background: rgb(0,0,0);
+    width: 20%;
+}

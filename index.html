@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="author" content="fendler_manuel"/>
+	<meta name="date" content="2020-11-26T12:00:00+01:00"/>
+	<meta name="description" content=""/> <!-- bis 150 Zeichen für Suchmaschinen -->
+    <link rel="stylesheet" href="../css/general.css">    
+    <link rel="stylesheet" href="css/index.css">    
+	<title>MF/Selektoren</title>
+</head>
+<body>
+<header>
+    <img id="logo" src="../css/resources/css.jpg" alt="Logo"/>
+    <h1>Spezielle CSS-Selektoren </h1>
+    <h2>:hover im Allgemeinen</h2>
+</header>
+<nav id="mySidenav">
+     <a href="../000_index/index.html" id="index">1. Allgemein</a><br/>
+    <a href="../001_links/links.html" id="links">2. Links</a><br/>
+    <a href="../002_images/images.html" id="images">3. Bilder</a>
+</nav>
+<main>
+    <p>Diese Seiten sollen erklären, was es mit dem CSS-Selektor <em>:hover</em> auf sich hat. Zuerst möchte ich ein Beispiel zeigen:</p>
+    <div id="show">Hierher mit der Maus!</div>
+    <div id="hide">Ich zeige mich nur, wenn die Maus dort oben ist!</div>
+    <p>Beim Behrühren des weißen Kastens öffnet sich ein weiterer.    Das bewirkt der Selektor <em>:hover</em>.</p>
+    <p>Man erstellt hierzu zwei ID's (oder Klassen). Eine blenden wir erstmal aus. Und dann werden die beiden verknüpft und die andere mit <em>:hover</em> versehen.
+    </p>
+    <div><img src="images/class.png" alt="Class"/></div>
+    <div><img src="images/properties.png" alt="Properties"/></div>
+    <p>Das war's zur allgemeinen Erklärung! Auf den nächsten Seiten gibt es noch ein paar Anwendungsbeispiele.</p>
+</main>
+<aside>
+    <div>
+        <a href="https://www.wetter.com/deutschland/jever/DE0005100.html" target="_blank" rel="nofollow" title="Wetter Jever" >Wetter Jever</a>
+    </div>
+    <div>
+        <script src="//cs3.wettercomassets.com/woys/5/js/w.js"></script>
+        <script >_wcomWidget({id: 'wcom-f0f475566545db69a0d5e475207a3721',location: 'DE0005100',format: '150x150',type: 'summary'});</script>
+    </div>
+</aside>
+<footer>
+    <a href="../001_links/links.html">Zeig mir, was Du mit Links machen kannst! (weiter) -></a>
+    <a href="../003_sources/sources.html" style="position: relative; top: 50px; right: 80px;">Quellen</a>
+</footer>
+</body>
+</html>
