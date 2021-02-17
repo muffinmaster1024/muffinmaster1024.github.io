@@ -11,18 +11,18 @@ header, main, footer, aside, nav {
     background: rgba(255, 255, 255, 0.3);
 }
 header{
-    height: 90px;
+    height: 5vh;
     text-align: center;
     margin: auto;  
 }
 footer{
-    height: 80px;
+    height: 5vh;
     text-align: right;
 }
 main{
     clear: both;
-    width: 1200px;
-    height: 580px;
+    width: 80vw;
+    height: 80vh;
     border: 2px solid rgb(0,0,0);
     padding: 10px;
     margin-left: auto;
@@ -32,10 +32,10 @@ aside{
     right: 8px;
 }
 aside, nav{
-    width: 120px;
-    height: 604px;
+    width: 7vw;
+    height: 80vh;
     position: absolute;
-    top: 111px;   
+    top: 10vh;   
 }
 #mySidenav a {
     position: absolute; 
