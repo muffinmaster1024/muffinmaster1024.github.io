@@ -7,7 +7,7 @@ body{
 
 /* Relevant */
 /***********************************************/
-header, main, footer, aside, nav {
+header, main, footer {
     background: rgba(255, 255, 255, 0.3);
 }
 header{
