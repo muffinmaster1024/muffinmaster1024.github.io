@@ -55,27 +55,23 @@ aside, nav{
     left: 0; 
 }
 
-#index {
+
+
+#test {
     position: relative;
     top: 20px;
     background-color: #000000;
 }
 
-#test {
+#pepek {
     position: relative;
     top: 80px;
     background-color: #000000;
 }
 
-#pepek {
-    position: relative;
-    top: 140px;
-    background-color: #000000;
-}
-
 #cloud {
     position: relative;
-    top: 200px;
+    top: 140px;
     background-color: #000000;
 }
 
