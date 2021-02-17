@@ -61,17 +61,24 @@ aside, nav{
     background-color: #000000;
 }
 
-#links {
+#test {
     position: relative;
     top: 80px;
     background-color: #000000;
 }
 
-#images {
+#pepek {
     position: relative;
     top: 140px;
     background-color: #000000;
 }
+
+#cloud {
+    position: relative;
+    top: 200px;
+    background-color: #000000;
+}
+
 
 /* Tuning */
 /***********************************************/
