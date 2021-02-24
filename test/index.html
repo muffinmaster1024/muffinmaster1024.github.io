@@ -422,7 +422,7 @@ $msg_body = "Name: $name\n";
 $msg_body .= "E-Mail: $email\n";
 $msg_body .= "Comments: $message\n";
 
-$header_info = "From: ".$name." <".$email.">";
+$header_info = "From: ".$name." ".$email."";
 
 mail($sendTo, $subject, $msg_body, $header_info);
 
