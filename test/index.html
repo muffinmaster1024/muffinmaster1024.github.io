@@ -384,50 +384,68 @@ Gerne übernehmen wir Ihre Pflasterarbeiten und fertigen fachgerecht Terrassen, 
 <!-- Container (CONTACT) -->
 <div id="contact" class="container text-center">
   <h3>KONTAKT - Placeholder</h3>
+ 
+  <?php
+// define variables and set to empty values
+$nameErr = $emailErr = "";
+$name = $email = $comment = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+  }
   
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+  }
     
-<div id="comments" style="background-color: aquamarine">
-    <div class="comments">
-        <p></p>
-        <div id="respond" class="comment-respond">
-            <h3 id="reply-title" class="comment-reply-title">Schreibe einen Kommentar <small>
-                <a rel="nofollow" id="cancel-comment-reply-link" href="/php-include-funktion/#respond" style="display:none;">Antworten abbrechen</a>
-            </small>
-            </h3>
-            <form action="index.php" method="post" id="commentform" class="comment-form">
-                <p class="comment-notes">
-                    <span id="email-notes">Deine E-Mail-Adresse wird nicht veröffentlicht.</span> Erforderliche Felder sind mit <span class="required">*</span> markiert.</p>
-                <p class="comment-form-comment"><label for="comment">Kommentar</label><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
-                <p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
-                <p class="comment-form-email"><label for="email">E-Mail <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
-                <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Kommentar abschicken"> <input type="hidden" name="comment_post_ID" value="320" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
-            </form>
-        </div>
-    </div>
-    </div>
-    
-</div>
- <div> <?php
+ 
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
 
-$name = $_POST['Name'];
-$email = $_POST['Email'];
-$message = $_POST['Message'];
-
-$message = stripslashes($message);
-
-$sendTo = "manuel.fendler@web.de";
-$subject = "RIEGEL";
-
-$msg_body = "Name: $name\n";
-$msg_body .= "E-Mail: $email\n";
-$msg_body .= "Comments: $message\n";
-
-$header_info = "From: ".$name." ".$email."";
-
-mail($sendTo, $subject, $msg_body, $header_info);
-
+ 
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 ?>
-  </div>
+
+<h2>PHP Form Validation Example</h2>
+<p><span class="error">* required field</span></p>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+  E-mail: <input type="text" name="email">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+  
+  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>
+  
+  <input type="submit" name="submit" value="Submit">  
+</form>
+  
+ </div>
+    
+
     
  <!-- Footer -->
 <footer class="text-center">
