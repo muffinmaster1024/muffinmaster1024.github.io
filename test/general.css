@@ -188,7 +188,7 @@ h2{
   
  /* flex-wrap: nowrap;*/
      justify-content: center;
- /*background-color: aqua;*/
+ 
 }
 .flex-container .flexi1{
     background-color: #fff;
@@ -197,13 +197,12 @@ h2{
 .flex-container .flexi2{
     background-color: #2d2d30;
     width: 50%;
+    color: #fff;
 }
 .flexi2 h3{
     color: #587e3c;
 }
-flexi2 p{
-    color: #fff;
-}
+
 
 /***************************************************************/
 /** {
