@@ -186,10 +186,14 @@ h2{
   
  /* flex-wrap: nowrap;*/
      justify-content: center;
- background-color: aqua;
+ /*background-color: aqua;*/
 }
-.flex-container .flexi{
-    background-color: blue;
+.flex-container .flexi1{
+    background-color: #2d2d30;
+    width: 50%;
+}
+.flex-container .flexi2{
+    background-color: #fff;
     width: 50%;
 }
 
