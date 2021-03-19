@@ -1,316 +1,775 @@
-body {
-    font: 400 15px/1.8 Lato, sans-serif;
-  /*  color: #777;*/
-  }
-  h3, h4 {
-      font-weight: 900;
-    margin: 10px 0 30px 0;
-    letter-spacing: 10px;      
-    font-size: 20px;
-    color: #13401d; /*#fff*/
-    word-wrap: break-word;
-  }
-h2{
-    color: #13401d; /*#fff*/
-    word-wrap: break-word;
-}
-  .container {
-    padding: 80px 14vw;
-  }
-  .person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  }
-  .carousel-inner img {
-    -webkit-filter: grayscale(30%);
-    filter: grayscale(30%); /* make all photos black and white */ 
-    /*width: 100%; /* Set width to 100% */
-    margin: auto;
-  }
-  .carousel-caption h3 {
-    font-size: 32px;
-      background-color: rgba(0,0,0,0.5);
-      color: #fff !important;
-      border-radius: 8px;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
+<!-- <?php session_start(); ?> -->
 
-
-
-
-
-  .bg-1 {
-    background: #2d2d30; /*#13401d*/
-    color: #fff;
-  }
-  .bg-1 h3 {color: #587e3c;} /*#fff*/
-  /*.bg-1 p {font-style: italic;}*/
-  .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-
-/* The animation code */
-/*@keyframes shrink {
-  from {height: 28vh;}
-  to {height: 15vh;}
-}
-
-/* The element to apply the animation to */
-#logo {
-  /*animation-name: shrink;
-  animation-duration: 4s;*/
-  transition: 1s;
-}
-
-
-
-  .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail p {
-    margin-top: 15px;
-    color: #555;
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
-  .modal-header, h4, .close {
-    background-color: #333;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-  }
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-  }
-  .nav-tabs li a {
-    color: #777;
-  }
-  #googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(20%);
-    filter: grayscale(20%);
-  }  
-  .navbar {
-    font-family: Montserrat, sans-serif;
-      font-weight: 900;
-    margin-bottom: 0;
-    background-color: #587e3c;
-    border: 0;
-    font-size: 14px !important;
-    letter-spacing: 4px;
-    opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-    color: #fff !important;
-  }
-  .navbar-nav li.active a {
-    color: #fff !important;
-    background-color: #29292c !important;
-  }
-
-.navbar-nav li.active a {
-    color: #fff !important;
-    background-color: #29292c !important;
-  }
-
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-  }
-  .open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
-  }
-.dropdown-menu{
-    background-color: #587e3c;
-}  
-
-.dropdown-menu li a {
-      font-weight: 900;
-    color: #000 !important;
-  }
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Galabau Dohr</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+    <link rel="stylesheet" href="general.css">
+    <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   
-
-  .dropdown-menu li a:hover {
-    background-color: #13401d !important;
-  }
-  footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-  }
-  footer a {
-    color: #f5f5f5;
-  }
-  footer a:hover {
-    color: #777;
-    text-decoration: none;
-  }  
-  .form-control {
-    border-radius: 0;
-  }
-  textarea {
-    resize: none;
-  }
-
-.flex-container {
-  display: flex;
-  
- /* flex-wrap: nowrap;*/
-     justify-content: center;
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="jquery.js"></script> 
  
-}
-.flex-container .flexi1{
-    background-color: #fff;
-    width: 50%;
-}
-.flex-container .flexi2{
-    background-color: #2d2d30;
-    width: 50%;
-    color: #fff;
-}
-.flexi2 h3{
-    color: #587e3c;
-}
+	<!--   	<script> 
+    $(function(){
+      $("#contact").load("formpage.html"); 
+    });
+	</script>  -->
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div>
+          <a class="navbar-brand" href="#myPage"><img id="logo" src="images/Logo_mit_Text2_Final.png" style="width: 30vw"></a>
+    </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+    
+        <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Leistungen
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#control">Baumpflege <br>und Fällung</a></li>
+                <li><a href="#trees">Baumkontrolle<br> und ASP</a></li>
+                <li><a href="#care">Landschaft<br>und Forst</a></li>
+                <li><a href="#nature">Natur- und <br>Artenschutz</a></li>
+                <li><a href="#gala">Garten- und <br>Landschaftsbau</a></li>
+              </ul>
+        </li> 
+          
+          <li><a href="#info">Über uns</a></li>
+         <!--  <li><a href="#control">Baumpflege <br>und Fällung</a></li>
+        <li><a href="#trees">Baumkontrolle<br> und ASP</a></li>
+        </ul><br>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#care">Landschafts- und <br>Forstpflege</a></li>
+        <li><a href="#nature">Natur- und <br>Artenschutz</a></li>
+        <li><a href="#gala">Garten- und <br>Landschaftsbau</a></li> -->
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#contact">KONTAKT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">  
+        
+     
+    <div class="item active">
+        <a href="#control">
+        <img src="images/control.JPG" alt="Baumpflege" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Baumpflege und Fällung</h3>
+        </div>
+        </a>
+      </div>
+        
+      <div class="item">
+          <a href="#trees">
+        <img src="images/trees.jpg" alt="Baumkontrolle" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Baumkontrolle und ASP</h3>
+        </div>      
+          </a>
+      </div>
+    
+      <div class="item">
+          <a href="#care">
+        <img src="images/care.jpg" alt="Landschaftspflege" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Landschaft und Forst</h3>
+        </div>      
+          </a>      
+      </div>
+        
+        <div class="item">
+        <a href="#nature">
+            <img src="images/nature.JPG" alt="Naturschutz" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Natur- und Artenschutz</h3>
+        </div>      
+            </a>
+      </div>
+        
+        <div class="item">
+            <a href="#gala">
+        <img src="images/gala.jpg" alt="Gartenbau" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Garten- und Landschaftsbau</h3>
+        </div>      
+            </a>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+    
+<!-- Container (INFO) -->
+<div id="info" class="container text-center">
+  
+    <h3>ÜBER UNS</h3>
+      
+            <p>Wir möchten Ihnen hier einen Überblick über unser Leistungsspektrum geben und einen Eindruck über unsere Arbeitsweise vermitteln.</p>
+            <p>Als gelernter Landschaftsgärtner, studierter Landschaftsplaner (B.ENG. Landschaftsentwicklung), FLL-zertifizierter Baumkontrolleur und Baumpfleger biete ich mit meinem Betrieb verschiedene Leistungen mit dem Schwerpunkt „Baum und Landschaft“ an.</p>
+            <p>Zu unseren Auftraggebern gehören Privatpersonen, Behörden  und Gemeinden, Planungsbüros, Naturschutzverbände und Vereine. Daneben arbeiten wir regelmäßig als Subunternehmen für Betriebe aus dem grünen Bereich.</p>
+            <p>Wir bieten unsere Leistungen im Raum Osnabrück, Krefeld und Friesland an.</p>
+            <h2>Danke für Ihr Interesse - wir freuen uns von Ihnen zu hören! </h2>
+
+    </div>
 
 
-/***************************************************************/
-/** {
-  box-sizing: border-box;
-}
+    
+<!-- Container (CONTROL) -->
+<div id="control" class="bg-1">
+    <div class="container">
+  <h3 class="text-center">BAUMPFLEGE und FÄLLUNG</h3>
+    <h3 class="text-center">Baumpflege</h3>
+            <p class="text-center">Zur Entwicklung und Erhaltung oder auch zur Wiederherstellung eines verkehrssicheren und arttypischen Baumzustandes sind gelegentliche Baumpflegearbeiten erforderlich.
+            Bei Schäden durch etwa Sturm, Blitzschlag, Trockenheit oder durch Baumkrankheiten werden Baumpflegearbeiten zur Sicherung des Baumes z.T. zwingend notwendig.
+            Und auch die Ansprüche des Menschen hinsichtlich Erscheinungsbild, Sicherheit und Nutzen an die Bäume spielen eine große Rolle.
+            Durch fachgerechte Baumpflegemaßnahmen kann auf die Standortbedingungen, die Bedürfnisse des Baumes sowie die Ansprüche des Menschen individuell eingegangen werden. </p>
+            <p class="text-center">Gerne beraten wir Sie diesbezüglich vor Ort welche Maßnahmen für Ihren Baum/Baumbestand die förderlichsten sind.
+            Mit einer fachgerechten Umsetzung der entsprechenden Schnittmaßnahmen unter Berücksichtigung der ZTV- Baumpflege (Zusätzlich Technische Vertragsbedingungen)  und  Einhaltung  der naturschutzfachlichen Bestimmungen, gewährleisten wir eine sichere und schonende Ausführung der Baumarbeiten.</p>
+            <p><br></p>
+            <h3 class="text-center">Baumfällung</h3>
+            <p class="text-center">Ist ein Baum aus verschiedenen Gründen nicht mehr zu erhalten, kann es nötig sein den Baum zu entfernen. Ob der Baum komplett entfernt werden sollte, oder ob durch einen Kronensicherungsschnitt Teile des Baumes zeitweilig noch erhalten werden können, ist situativ abzuwägen.
+            Die notwendigen Maßnahmen werden je nach Standortbedingungen vom Boden aus, per Hubsteiger oder per Seilklettertechnik (SKT) fachgerecht und versichert durchgeführt.</p>
+            <p class="text-center">Sofern der Platz nicht ausreicht einen Baum im Ganzen zu fällen, ist es auch auf engstem Raum möglich, den Baum Stück für Stück abzutragen. Befinden sich Objekte im Kronenbereich, können Äste, Kronen- und Stammteile zur Vermeidung von Schäden am Seil zu Boden gelassen werden.
+            Der Abtransport der anfallenden Grünabfalle und des Stammholzes kann vollständig oder auch in Teilen erfolgen. Beispielsweise kann das Ast- und Stammholz am Auftragsort verbleiben und auch die durch das Häckseln des Astwerks anfallenden Hackschnittel können als Mulchmatierial für Beete o.ä. genutzt werden.</p>
+            <p class="text-center">Wir beraten Sie gerne, ob und wie Ihr Baum/Baumbestand zu erhalten ist. Sofern eine Fällung einzelner Bäume notwendig wird, sprechen wir mit Ihnen die individuellen, erforderlichen Schritte im Hinblick einer fachgerechten Fällung durch. </p>
+  </div>
+    </div>
 
-/* Position the image container (needed to position the left and right arrows) */
-/*.imgcontainer {
-    border-style: solid;
-    position: relative;
-    text-align: center;
-}
+<!-- Container (TREES) -->
+<div id="trees" class="container text-center">
+  
+    <h3>BAUMKONTROLLE und ASP</h3>
+    <h3>Baumkontrolle</h3>
+<p>Die regelmäßige Sichtkontrolle von Bäumen im Sinne der Verkehrssicherungspflicht – die „Baumkontrolle/Regelkontrolle“ -  minimiert das Gefahrenpotential, welches von Bäumen ausgehen kann. Der jeweilige Baum wird dabei auf verkehrsgefährdende Schäden/Symptome an Wurzel, Stamm und Krone regelmäßig untersucht. Sofern erforderlich werden notwendige Baumpflegemaßnahmen wie bspw. Totholzentfernung, Lichtraumprofilschnitt o.ä. festgesetzt.
+Die Baumkontrolle wird zertifiziert, anhand der FLL-„Baumkontrollrichtline“ durchgeführt und kann im öffentlichen sowie privaten Bereich angeboten werden.</p>
+<p><br></p>
+    <h3 style="letter-spacing: 5px;">Baumhöhlenkontrolle für Artenschutzrechtliche Prüfung (ASP)</h3>
+<p>Im Rahmen von Bauprojekten kommt es regelmäßig vor, dass Einzelbäume oder ganze Baumbestände gefällt werden.  Nicht selten weisen ältere Bäume/Baumbestände Baumhöhlungen, Rindenrisse o.ä.  auf, die bspw. von Fledermäusen als Quartier genutzt werden. Vor möglichen Fällarbeiten, sind im Rahmen von Artenschutzrechtlichen Prüfungen solche Höhlungen auszumachen und auf Besatz zu kontrollieren. 
+Einzelbäume oder ein gesamter Baumbestand kann zuerst vom Boden aus auf mögliche Höhlungen überprüft werden. Als nächster Schritt können potenzielle Baumhöhlen per Seilklettertechnik sicher erreicht und mittels Video-Endoskop eingehend überprüft werden. 
+Ist kein Besatz vorhanden, werden die Höhlen sicher mit Schaumstoffstopfen verschlossen, sodass die Höhlen nicht mehr genutzt werden können und eine spätere Nutzung des Holzes problemlos gewährleistet ist. Im Anschluss kann der Baum zur Fällung frei gegeben werden.</p>
+  </div>
 
-/* Hide the images by default */
-/*.mySlides {
-  display: none;
- /*   max-height: 80%;*/
-/*}
+    <!-- Container (CARE) -->
+<div id="care" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">LANDSCHAFT und FORST</h3>
+      <h3 class="text-center">Landschaftspflege</h3>
+  <p class="text-center">Zur Erhaltung und Entwicklung von manchen Lebensräumen in der Landschaft bedarf es an Pflegemaßnahmen. Lebensräume oder Landschaftsbestandteile wie bspw. Moore, Heiden, Streuobstwiesen oder Kopfbäume kommen häufig ohne Pflege nicht aus. Um einen entsprechenden Zielzustand zu erhalten bzw. zu erreichen, müssen geeignete Maßnahmen geplant und umgesetzt werden. <br>
+Solche Maßnahmen sind seitens der Planung oft sehr vielseitig und komplex und hinsichtlich deren Umsetzung auf Sonderstandorten nicht weniger herausfordernd. 
+Mit fundiertem Wissen als B.ENG.–Landschaftsentwicklung und umfangreicher Erfahrung aus diversen Maßnahmen können wir eine Vielzahl an Aufgaben sowohl bei Planung und Ausführung von Landschaftspflegemaßnahmen übernehmen. </p>
+<p><br></p>
+      <h3 class="text-center">Forstdientleistungen</h3>
+<p class="text-center">Ebenso übernehmen wir Forstarbeiten auf Sonderstandorten und schwierig zugänglichen Flächen. Mit Kleingeräten und intelligenten, effektiven Lösungen beginnt unser Leistungsspektrum dort, wo Großgeräte uneffektiv werden oder zu viel Schaden anrichten. Im Fokus steht dabei eine bodenschonende und bestandsschützende Arbeitsweise.</p>
+</div>
+    </div>
+
+<!-- Container (NATURE) -->
+<div id="nature" class="container text-center">
+
+    <h3>NATUR und ARTENSCHUTZ</h3>
+      <p>Neben der Pflege von Lebensräumen besteht zum Schutz gefährdeter Tier- und Pflanzenarten häufig Handlungsbedarf, der in Form von Natur- und Artenschutzmaßnahmen umgesetzt werden kann. <br>
+Ergänzend zum Arbeitsfeld der Landschaftspflege übernehmen wir auch die Planung und Umsetzung von Natur- und Artenschutzmaßnahmen, darunter auch Maßnahmen im Rahmen der Eingriffsregelung. </p>
+<p>Darunter fallen Maßnahmen in Natur und Landschaft wie die Sanierung, Pflege oder Neuanlage von Lebensräumen wie Blühstreifen, Trockenmauern, Streuobstwiesen und Kleingewässern oder auch der Bau und das Ausbringen von diversen Nisthilfen.</p>
+<p>Ebenso bieten wir Arbeiten auf privatem Grund wie beispielsweise die Beratung im eigenen Garten bis hin zur Planung und Ausführung eines „Naturgartens“ an.</p>
+      </div>
+  
+
+<!-- Container (GALA) -->
+<div id="gala" class="bg-1">
+     <div class="container">
+  <h3 class="text-center">GARTEN und LANDSCHAFTSBAU</h3>
+  <p class="text-center">Neben dem Schwerpunkt „Baum und Landschaft“ sind Arbeiten aus dem Garten- und Landschaftsbau ebenfalls Betätigungsfeld. <br>
+Gerne übernehmen wir Ihre Pflasterarbeiten und fertigen fachgerecht Terrassen, Wege und Auffahrten die mit Naturstein, Klinker, Betonstein oder Kombinationen optisch ansprechend gestaltet werden. </p>
+<p class="text-center">Gerne verschönern wir Ihren Garten auch mit Holzdecks, Trockenmauern, Sichtschutz, Pflanzungen und vielem mehr. </p>
+<p class="text-center">Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahmen einer Garten-Neuanlage an. </p>    
+</div>
+    </div>
+ 
+    
+<!-- Container (projekte) -->
+<div id="projects" class="text-center">
+    <h3 style="padding-top: 80px;">PROJEKTE</h3>
+    
+<!-- Start of next Project XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->    
+<div><br></div>   
+<div class="flex-container">
+        <div class="flexi1">
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+      <li data-target="#myCarousel2" data-slide-to="2"></li>
+      <li data-target="#myCarousel2" data-slide-to="3"></li>
+      <li data-target="#myCarousel2" data-slide-to="4"></li>
+      <li data-target="#myCarousel2" data-slide-to="5"></li>
+      <li data-target="#myCarousel2" data-slide-to="6"></li>
+      <li data-target="#myCarousel2" data-slide-to="7"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+    <div class="item active">
+        <img src="images/spitzpappel/1.jpg" alt="Logo" width="">        
+        </div>  
+     
+    <div class="item">
+        <img src="images/spitzpappel/2.jpg" alt="Baumpflege" width="">
+      </div>
+        
+    <div class="item">
+        <img src="images/spitzpappel/3.jpg" alt="Baumpflege" width="">
+      </div>
+    
+    <div class="item">
+        <img src="images/spitzpappel/4.jpg" alt="Baumpflege" width="">
+      </div>
+        
+    <div class="item">
+        <img src="images/spitzpappel/5.jpg" alt="Baumpflege" width="">
+      </div>
+        
+    <div class="item">
+        <img src="images/spitzpappel/6.jpg" alt="Baumpflege" width="">
+      </div>
+
+	        <div class="item">
+        <img src="images/spitzpappel/7.jpg" alt="Baumpflege" width="">
+      </div>
+
+	        <div class="item">
+        <img src="images/spitzpappel/8.jpg" alt="Baumpflege" width="">
+      </div>
+
+		    
+</div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+       </div>          
+                  <!-- Thumbnail images -->
+          <div class="flex-container">
+            
+		  <div class="column">
+              <img class="demo cursor" src="images/spitzpappel/1.jpg" style="width:100%" role="button" data-target="#myCarousel2" data-slide-to="0" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/spitzpappel/2.jpg" style="width:100%" role="button" data-target="#myCarousel2" data-slide-to="1" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/spitzpappel/3.jpg" style="width:100%" role="button" data-target="#myCarousel2" data-slide-to="2" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/spitzpappel/4.jpg" style="width:100%" role="button" data-target="#myCarousel2" data-slide-to="3" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/spitzpappel/5.jpg" style="width:100%" role="button" data-target="#myCarousel2" data-slide-to="4" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/spitzpappel/6.jpg" style="width:100%" role="button" data-target="#myCarousel2" data-slide-to="5" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/spitzpappel/7.jpg" style="width:100%" role="button" data-target="#myCarousel2" data-slide-to="6" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/spitzpappel/8.jpg" style="width:100%" role="button" data-target="#myCarousel2" data-slide-to="7" alt="The Woods">
+            </div>
+           
+		</div>
+                
+           
+        </div>
+        
+        <div class="flexi1">
+            <h3>SKT als sinnvolle Alternative zum Hubsteiger</h3>
+            <p>Manchmal kann eine Fällung per Seilklettertechnik (SKT) auch an Standorten, die mit einem Hubsteiger erreichbar sind, die sinnvollere Wahl sein. In nur ca. 2 Stunden wurde die Spitzpappel fachgerecht per Seilklettertechnik abgetragen. <br>
+              Bei ca. 15m Entfernung zur Straße und gut 20m Baumhöhe hätte ein 7,5t LKW-Hubsteiger zum Einsatz kommen müssen. Dabei hätte die Straße gesperrt werden müssen was einen unnötigen Aufwand und zusätzliche Risiken mit sich bringt. </p>
+            </p>
+          </div>
+    </div>
+    <div><br></div>
+    
+    <!-- Start of 2nd Project XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <div style="background-color: #2d2d30;"><br></div>
+    <div class="flex-container">
+        <div class="flexi2">
+          <h3>Die vielstämmige Kiefer</h3>
+          <p>Manchmal wartet bei der Fällung eines Baumes ein ganzer „Wald“ auf das Fäll-Team. Leider war der Baumstandort sehr beengt und mehrere Stämmlinge der Kiefer waren bereits bei Stürmen ausgebrochen – somit sollte der beeindruckende Baum leider entfernt werden. <br>
+            Insgesamt 17 Stämmlinge von ca. 20-40cm Durchmesser mussten auf engstem Raum abgetragen werden.  
+          </p>
+          </div>
+        <div class="flexi2">
+            <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel3" data-slide-to="1"></li>
+      <li data-target="#myCarousel3" data-slide-to="2"></li>
+      <li data-target="#myCarousel3" data-slide-to="3"></li>
+      <li data-target="#myCarousel3" data-slide-to="4"></li>
+      <li data-target="#myCarousel3" data-slide-to="5"></li>
+      <li data-target="#myCarousel3" data-slide-to="6"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+    <div class="item active">
+        <img src="images/kiefer/1u.jpg" alt="Logo" width=""  style="-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);">        
+        </div>  
+     
+    <div class="item">
+        <img src="images/kiefer/2u.jpg" alt="Baumpflege" width="">
+      </div>
+        
+      <div class="item">
+        <img src="images/kiefer/3u.jpg" alt="Baumkontrolle" width="">
+      </div>
+    
+      <div class="item">
+        <img src="images/kiefer/4u.jpg" alt="Landschaftspflege" width="">
+      </div>
+        
+       
+        
+        <div class="item">
+        <img src="images/kiefer/5u.jpg" alt="Gartenbau" width="">
+      </div>
+      <div class="item">
+        <img src="images/kiefer/6u.jpg" alt="Gartenbau" width="">
+      </div>
+      <div class="item">
+        <img src="images/kiefer/7u.jpg" alt="Gartenbau" width="">
+      </div>
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+       </div>          
+                  <!-- Thumbnail images -->
+          <div class="flex-container">
+            <div class="column">
+              <img class="demo cursor" src="images/kiefer/1u.jpg" style="width:100%" role="button" data-target="#myCarousel3" data-slide-to="0" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/kiefer/2u.jpg" style="width:100%" role="button" data-target="#myCarousel3" data-slide-to="1" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/kiefer/3u.jpg" style="width:100%" role="button" data-target="#myCarousel3" data-slide-to="2" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/kiefer/4u.jpg" style="width:100%" role="button" data-target="#myCarousel3" data-slide-to="3" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/kiefer/5u.jpg" style="width:100%" role="button" data-target="#myCarousel3" data-slide-to="4" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/kiefer/6u.jpg" style="width:100%" role="button" data-target="#myCarousel3" data-slide-to="5" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/kiefer/7u.jpg" style="width:100%" role="button" data-target="#myCarousel3" data-slide-to="6" alt="The Woods">
+              </div>
+              
+          </div>
+                
+           
+        </div>
+        
+    </div>
+    
+</div>
+<div style="background-color: #2d2d30;"><br></div>
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXX-->    
+<!-- Start of 3rd Project XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->    
+<div><br></div>   
+<div class="flex-container">
+        <div class="flexi1">
+            <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel4" data-slide-to="1"></li>
+      <li data-target="#myCarousel4" data-slide-to="2"></li>
+      <li data-target="#myCarousel4" data-slide-to="3"></li>
+      <li data-target="#myCarousel4" data-slide-to="4"></li>
+      <li data-target="#myCarousel4" data-slide-to="5"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+    <div class="item active">
+        <img src="images/pappeln/1u.jpg" alt="Logo" width="">        
+        </div>  
+     
+    <div class="item">
+        <img src="images/pappeln/2u.jpg" alt="Baumpflege" width="">
+      </div>
+        
+    <div class="item">
+        <img src="images/pappeln/3u.jpg" alt="Baumpflege" width="">
+      </div>
+    
+    <div class="item">
+        <img src="images/pappeln/4u.jpg" alt="Baumpflege" width="">
+      </div>
+        
+    <div class="item">
+        <img src="images/pappeln/5u.jpg" alt="Baumpflege" width="">
+      </div>
+        
+    <div class="item">
+        <img src="images/pappeln/6u.jpg" alt="Baumpflege" width="">
+      </div>
+
+	     
+
+		    
+</div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+       </div>          
+                  <!-- Thumbnail images -->
+          <div class="flex-container">
+            
+		  <div class="column">
+              <img class="demo cursor" src="images/pappeln/1u.jpg" style="width:100%" role="button" data-target="#myCarousel4" data-slide-to="0" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/pappeln/2u.jpg" style="width:100%" role="button" data-target="#myCarousel4" data-slide-to="1" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/pappeln/3u.jpg" style="width:100%" role="button" data-target="#myCarousel4" data-slide-to="2" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/pappeln/4u.jpg" style="width:100%" role="button" data-target="#myCarousel4" data-slide-to="3" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/pappeln/5u.jpg" style="width:100%" role="button" data-target="#myCarousel4" data-slide-to="4" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/pappeln/6u.jpg" style="width:100%" role="button" data-target="#myCarousel4" data-slide-to="5" alt="The Woods">
+            </div>
+            
+           
+		</div>
+                
+           
+        </div>
+        
+        <div class="flexi1">
+            <h3>Wenig Platz für große Pappeln</h3>
+            <p>Wenn es irgendwie möglich ist, große Bäume im Ganzen oder zumindest in Teilen legen zu können, sollte man dies dem aufwendigen Abtragen vorziehen. <br>
+              In diesem Fall war für die 6 bis zu 40m hohen Spitzpappeln mit bis zu 120cm Durchmesser jedoch nur sehr wenig Platz verfügbar. Damit die Pappeln in ganzer Länge gelegt werden konnten, wurden sie bis auf ca. 25m aufgeastet. Anschließend wurden sie windenunterstützt in die äußerst schmale verfügbare Trasse gelegt. <br>
+              (Solche Standortbedingungen lassen keinen Raum für Ungenauigkeiten zu und sind auch für ein erfahrenes Team eine Herausforderung. Schön wenn solche Aufträge wie geplant und ohne jeglichen Schaden abgeschlossen werden können.)
+            </p>
+            </div>
+    </div>
+    <div><br></div>
+    
+    <!-- Start of 4th Project XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+    <div style="background-color: #2d2d30;"><br></div>
+    <div class="flex-container">
+        <div class="flexi2">
+          <h3>Stehendes Totholz für einen lebendigen Naturwald</h3>
+          <p>Auch für den Artenschutz geht es mal hoch hinaus. Die Pappelreihe entlang einer Bahntrasse musste auf Grund von zunehmenden Problemen hinsichtlich der Standsicherheit gefällt werden. Der Standort der Pappeln befand sich in einem aus der Nutzung genommenen Naturwald in dem die Natur sich selbst überlassen werden soll. <br>
+            Als Artenschutzmaßnahme wurden zur Entwicklung von „Habitatbäumen“ 5 ausgewählte Pappeln bis auf ca. 18m abgetragen. Die verbleibenden Stammsockel stellen keine Gefahr mehr für die Bahntrasse dar und werden in Zukunft als „Habitatbäume“ Lebensraum für Flora und Fauna bieten.<br>
+            Die weiteren Pappeln entlang der Bahntrasse wurden anschließend windenunterstützt gefällt. Das gesamte Kronen- und Stammholz wurde nicht weiter aufgearbeitet oder gerückt, sodass es den natürlichen Kreisläufen im Wald erhalten bleibt.<br>
+          </p>  
+          </div>
+        <div class="flexi2">
+            <div id="myCarousel5" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel5" data-slide-to="1"></li>
+      <li data-target="#myCarousel5" data-slide-to="2"></li>
+      <li data-target="#myCarousel5" data-slide-to="3"></li>
+      <li data-target="#myCarousel5" data-slide-to="4"></li>
+      <li data-target="#myCarousel5" data-slide-to="5"></li>
+      <li data-target="#myCarousel5" data-slide-to="6"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+    <div class="item active">
+        <img src="images/totholz/1.JPG" alt="Logo" width=""  style="-webkit-filter: grayscale(0%);
+    filter: grayscale(0%);">        
+        </div>  
+     
+    <div class="item">
+        <img src="images/totholz/2.JPG" alt="Baumpflege" width="">
+      </div>
+        
+      <div class="item">
+        <img src="images/totholz/3.JPG" alt="Baumkontrolle" width="">
+      </div>
+    
+      <div class="item">
+        <img src="images/totholz/4.JPG" alt="Landschaftspflege" width="">
+      </div>
+              
+        <div class="item">
+        <img src="images/totholz/5.JPG" alt="Gartenbau" width="">
+      </div>
+      <div class="item">
+        <img src="images/totholz/6.JPG" alt="Gartenbau" width="">
+      </div>
+      <div class="item">
+        <img src="images/totholz/7.JPG" alt="Gartenbau" width="">
+      </div>
+      
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel5" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel5" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+       </div>          
+                  <!-- Thumbnail images -->
+          <div class="flex-container">
+            <div class="column">
+                <img class="demo cursor" src="images/totholz/1.JPG" style="width:100%" role="button" data-target="#myCarousel5" data-slide-to="0" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/totholz/1.JPG" style="width:100%" role="button" data-target="#myCarousel5" data-slide-to="1" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/totholz/1.JPG" style="width:100%" role="button" data-target="#myCarousel5" data-slide-to="2" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/totholz/1.JPG" style="width:100%" role="button" data-target="#myCarousel5" data-slide-to="3" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/totholz/1.JPG" style="width:100%" role="button" data-target="#myCarousel5" data-slide-to="4" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/totholz/1.JPG" style="width:100%" role="button" data-target="#myCarousel5" data-slide-to="5" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/totholz/1.JPG" style="width:100%" role="button" data-target="#myCarousel5" data-slide-to="6" alt="The Woods">
+              </div>
+              
+          </div>
+                
+           
+        </div>
+        
+    </div>
+    
+</div>    
+<div style="background-color: #2d2d30;"><br></div> 
 
 
-/* Add a pointer when hovering over the thumbnail images */
-/*.cursor {
-  cursor: pointer;
-}
+ <!-- XXXXXXXXXXXXXXXXXXXXXXXXXX-->    
+<!-- Start of 5th Project XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->    
+<div><br></div>   
+<div class="flex-container">
+        <div class="flexi1">
+            <div id="myCarousel6" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel6" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel6" data-slide-to="1"></li>
+      <li data-target="#myCarousel6" data-slide-to="2"></li>
+      
 
-/* Next & previous buttons */
-/*.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 100px;
-  width: auto;
-  padding: 14px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+    </ol>
 
-/* Position the "next button" to the right */
-/*.prev{
-    left:0;
-}
-/*.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      
+    <div class="item active">
+        <img src="images/falke/1.JPG" alt="Logo" width="">        
+        </div>  
+     
+    <div class="item">
+        <img src="images/falke/2.jpg" alt="Baumpflege" width="">
+      </div>
+        
+    <div class="item">
+        <img src="images/falke/3.JPG" alt="Baumpflege" width="">
+      </div>
+    
+	     
 
-/* On hover, add a gray background color with a little bit see-through */
-/*.prev:hover,
-.next:hover, 
-.closebtn:hover{
-  background-color: rgba(0, 0, 0, 0.5);
-}
+		    
+</div>
 
-/* Number text (1/3 etc) */
-/*.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel6" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel6" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+       </div>          
+                  <!-- Thumbnail images -->
+          <div class="flex-container">
+            
+		  <div class="column">
+              <img class="demo cursor" src="images/falke/1.JPG" style="width:100%" role="button" data-target="#myCarousel6" data-slide-to="0" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/falke/2.jpg" style="width:100%" role="button" data-target="#myCarousel6" data-slide-to="1" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/falke/3.JPG" style="width:100%" role="button" data-target="#myCarousel6" data-slide-to="2" alt="The Woods">
+            </div>
+           
+		</div>
+                
+           
+        </div>
+        
+        <div class="flexi1">
+            <h3>Neues Zuhause für Turmfalken</h3>
+            <p>Natürliche Nistmöglichkeiten werden in der heutigen Landschaft immer seltener. Zur Schaffung einer neuen Brutstätte für den Turmfalken wurden hier im Rahmen einer Artenschutz- bzw. Kompensationsmaßnahme zwei Turmfalkennisthilfen an einer Steilwand in ca. 25m Höhe angebracht.
+            </p>
+            </div>
+    </div>
+    <div><br></div>   
+    
+    
+    
+    
+    
+<!-- Container (CONTACT) 
+<div id="contact" class="container text-center">
+  
 
-/* Container for image text */
-/*
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-*/
+  
+</div> -->
+    
 
-/*.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    
+ <!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="nach oben klettern">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+</footer>
+    
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage'], .item a").on('click', function(event) {
 
-/* Six columns side by side */
-/*.column {
-  float: left;
-  width:100px;
-   height:100px;
-   overflow:hidden;
-}
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
 
-/* Add a transparency effect for thumnbail images */
-/*.demo {
-  opacity: 0.8;
-}
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-/*.active,
-.demo:hover {
-  opacity: 1;
-}
+      // Store hash
+      var hash = this.hash;
 
-/* Closable button inside the image */
-/*.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: black;
-  font-size: 35px;
-  cursor: pointer;
-    border-radius: 3px 3px 3px 3px;
-}
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logo").style.width = "16vw";
+  } else {
+    document.getElementById("logo").style.width = "30vw";
+  }
+} 
+</script>
+</body>
+</html>
