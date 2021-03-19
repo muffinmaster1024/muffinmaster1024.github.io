@@ -194,14 +194,14 @@ h2{
     background-color: #fff;
     width: 70%;
     text-align: center;
-    margin: 80px 5vw;
+    padding: 80px 5vw;
 }
 .flex-container .flexi2{
     background-color: #2d2d30;
     width: 70%;
     color: #fff;
     text-align: center;
-    margin: 80px 5vw;
+    padding: 80px 5vw;
 }
 .flexi2 h3{
     color: #587e3c;
