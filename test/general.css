@@ -40,9 +40,13 @@ h2 {
       border-radius: 8px;
   }
   @media (max-width: 600px) {
+    body {
+      font: 400 12px/1.2 Lato, sans-serif;
+    /*  color: #777;*/
+    }
     .flexi3 {
       letter-spacing: 0px;      
-            font-size: 14px;
+            font-size: 12px;
             word-wrap: break-word;
     }
     h3 {
