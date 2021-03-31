@@ -195,6 +195,7 @@ h2{
     width: 70%;
     text-align: center;
     padding: 5vh 5vw;
+    word-wrap: break-word;
 }
 .flex-container .flexi2{
     background-color: #2d2d30;
@@ -202,13 +203,14 @@ h2{
     color: #fff;
     text-align: center;
     padding: 5vh 5vw;
+    word-wrap: break-word;
 }
-.flexi1 h3{
+/*.flexi1 h3{
   word-wrap: break-word;
-}
+}*/
 .flexi2 h3{
     color: #587e3c;
-    word-wrap: break-word;
+   /* word-wrap: break-word;*/
 }
 
 
