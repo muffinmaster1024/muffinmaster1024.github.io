@@ -40,10 +40,15 @@ h2{
       border-radius: 8px;
   }
   @media (max-width: 600px) {
-      h3 {
-          letter-spacing: 2px;      
-        font-size: 16px;
-      }
+    flexi3{
+      letter-spacing: 0px;      
+            font-size: 14px;
+            word-wrap: break-word;
+    }
+    h3 {
+      letter-spacing: 2px;      
+      font-size: 16px;
+    }
     /* .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide 
     } */
@@ -209,12 +214,24 @@ h2{
     padding: 5vh 5vw;
     word-wrap: break-word;
 }
+.flex-container .flexi3{
+  background-color: #2d2d30;
+  width: 70%;
+  color: #fff;
+  text-align: center;
+  padding: 5vh 5vw;
+  word-wrap: break-word;
+}
 /*.flexi1 h3{
   word-wrap: break-word;
 }*/
 .flexi2 h3{
     color: #587e3c;
    /* word-wrap: break-word;*/
+}
+.flexi3 h3{
+  color: #587e3c;
+ /* word-wrap: break-word;*/
 }
 
 
