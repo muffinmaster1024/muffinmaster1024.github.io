@@ -54,11 +54,12 @@ h2 {
     }
     h2, h3, h4 {
       letter-spacing: 2px;      
-      font-size: 12px;
+      font-size: 13px;
+      word-wrap: break-word;
     }
-    /* .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide 
-    } */
+     .carousel-caption {
+      font-size: 16px; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    } 
   }
 
 
