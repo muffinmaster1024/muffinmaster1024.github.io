@@ -41,7 +41,7 @@ h2 {
   }
   @media (max-width: 600px) {
     body {
-      font: 400 12px/1.2 Lato, sans-serif;
+      font: 400 14px/1.5 Lato, sans-serif;
     /*  color: #777;*/
     }
     .flexi1,.flexi2,.flexi3 h3{
