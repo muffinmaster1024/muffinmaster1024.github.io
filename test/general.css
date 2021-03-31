@@ -40,6 +40,10 @@ h2{
       border-radius: 8px;
   }
   @media (max-width: 600px) {
+      h3 {
+          letter-spacing: 2px;      
+        font-size: 16px;
+      }
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
