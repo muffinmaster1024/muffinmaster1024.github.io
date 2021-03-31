@@ -203,8 +203,12 @@ h2{
     text-align: center;
     padding: 5vh 5vw;
 }
+.flexi1 h3{
+  word-wrap: break-word;
+}
 .flexi2 h3{
     color: #587e3c;
+    word-wrap: break-word;
 }
 
 
