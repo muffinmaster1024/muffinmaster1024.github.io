@@ -44,6 +44,9 @@ h2 {
       font: 400 14px/1.5 Lato, sans-serif;
     /*  color: #777;*/
     }
+      .flexi1,.flexi2,.flexi3 {
+      font: 400 14px/1.5 Lato, sans-serif;
+    }
     .flexi1,.flexi2,.flexi3 h3{
       letter-spacing: 0px;      
             font-size: 12px;
