@@ -10,7 +10,7 @@ body {
     color: #13401d; /*#fff*/
     word-wrap: break-word;
   }
-h2{
+h2 {
     color: #13401d; /*#fff*/
     word-wrap: break-word;
 }
@@ -40,7 +40,7 @@ h2{
       border-radius: 8px;
   }
   @media (max-width: 600px) {
-    .flexi3{
+    .flexi3 {
       letter-spacing: 0px;      
             font-size: 14px;
             word-wrap: break-word;
