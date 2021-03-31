@@ -211,7 +211,7 @@ h2 {
     background-color: #fff;
     width: 70%;
     text-align: center;
-    padding: 5vh 5vw;
+    padding: 2vh 5vw;
     word-wrap: break-word;
 }
 .flex-container .flexi2{
@@ -219,7 +219,7 @@ h2 {
     width: 70%;
     color: #fff;
     text-align: center;
-    padding: 5vh 5vw;
+    padding: 2vh 5vw;
     word-wrap: break-word;
 }
 .flex-container .flexi3{
@@ -227,7 +227,7 @@ h2 {
   width: 70%;
   color: #fff;
   text-align: center;
-  padding: 5vh 5vw;
+  padding: 2vh 5vw;
   word-wrap: break-word;
 }
 /*.flexi1 h3{
