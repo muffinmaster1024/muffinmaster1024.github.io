@@ -47,5 +47,69 @@
  	<p><a href="impressum.html">Impressum</a> <a href="datenschutz.html">Datenschutzerklärung</a> <a href="cookies.html">Cookie-Hinweis</a></p>
 </footer>
   
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#3c404d",
+      "text": "#d6d6d6"
+    },
+    "button": {
+      "background": "#8bed4f"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "message": "Diese Website nutzt ausschließlich Cookies die zu ihrer Funktion notwendig sind. Durch die Nutzung stimmen sie deren Verwendung zu.",
+    "dismiss": "OK!",
+    "link": "https://www.galabau-dohr.de/cookies.html",
+    "href": "https://www.galabau-dohr.de/cookies.html"
+  }
+});
+</script>
+	
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage'], .item a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logo").style.width = "16vw";
+  } else {
+    document.getElementById("logo").style.width = "30vw";
+  }
+} 
+</script>
+	
 </body>
 </html>
