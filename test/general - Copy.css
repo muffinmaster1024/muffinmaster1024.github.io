@@ -417,9 +417,10 @@ h2 {
   cursor: pointer;
 }
 
-.mySlides {
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
   display: none;
 }
+
 
 .cursor {
   cursor: pointer;
@@ -519,4 +520,17 @@ img.hover-shadow {
   height: auto;
 
   backface-visibility: hidden;
+}
+
+#more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11, #more12, #more13 {display: none;}
+
+button {
+  background-color: #587e3c; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
 }
