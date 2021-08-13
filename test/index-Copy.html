@@ -1,0 +1,1034 @@
+<!-- <?php session_start(); ?> -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Galabau Dohr</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />	
+    <link rel="stylesheet" href="general - Copy.css">
+    <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="jquery.js"></script> 
+ 
+
+</head>
+	
+
+	
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  	<!--   	<script> 
+    $(function(){
+      $("#contact").load("formpage.html"); 
+    });
+	</script>  -->
+  
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div>
+          <a class="navbar-brand" href="#myPage"><img id="logo" src="images/Logo_mit_Text2_Final.png" style="width: 30vw"></a>
+    </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+    
+        <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Leistungen
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#control">Baumpflege <br>und Fällung</a></li>
+                <li><a href="#trees">Baumkontrolle<br> und ASP</a></li>
+                <li><a href="#care">Landschaft<br>und Forst</a></li>
+                <li><a href="#nature">Natur- und <br>Artenschutz</a></li>
+                <li><a href="#gala">Garten- und <br>Landschaftsbau</a></li>
+              </ul>
+        </li> 
+          
+          <li><a href="#info">Über uns</a></li>
+         <!--  <li><a href="#control">Baumpflege <br>und Fällung</a></li>
+        <li><a href="#trees">Baumkontrolle<br> und ASP</a></li>
+        </ul><br>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#care">Landschafts- und <br>Forstpflege</a></li>
+        <li><a href="#nature">Natur- und <br>Artenschutz</a></li>
+        <li><a href="#gala">Garten- und <br>Landschaftsbau</a></li> -->
+          <li><a href="#projects">Projekte</a></li>
+          <li><a href="#contact">KONTAKT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div style="height: 50px;"></div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">  
+        
+     
+    <div class="item active">
+        <a href="#control">
+        <img src="images/control.JPG" alt="Baumpflege" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Baumpflege und Fällung</h3>
+        </div>
+        </a>
+      </div>
+        
+      <div class="item">
+          <a href="#trees">
+        <img src="images/trees.jpg" alt="Baumkontrolle" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Baumkontrolle und ASP</h3>
+        </div>      
+          </a>
+      </div>
+    
+      <div class="item">
+          <a href="#care">
+        <img src="images/care.jpg" alt="Landschaftspflege" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Landschaft und Forst</h3>
+        </div>      
+          </a>      
+      </div>
+        
+        <div class="item">
+        <a href="#nature">
+            <img src="images/nature.JPG" alt="Naturschutz" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Natur- und Artenschutz</h3>
+        </div>      
+            </a>
+      </div>
+        
+        <div class="item">
+            <a href="#gala">
+        <img src="images/gala.jpg" alt="Gartenbau" width="100%" height="600">
+        <div class="carousel-caption">
+          <h3>Garten- und Landschaftsbau</h3>
+        </div>      
+            </a>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+    
+<!-- Container (INFO) -->
+<div id="info" class="text-center flex-container">
+  <div class="flexi1" style="padding: 5vh 0vw; ">
+    <img src="images/container/ueberUns.jpg" style="padding: 5%; max-height: 50vh; max-width: 35vw;"> 
+  </div>
+<div class="flexi1" style="padding: 5vh 2vw; ">
+    <h3>ÜBER UNS</h3>
+      
+            <p>Wir möchten Ihnen hier einen Überblick über unser Leistungsspektrum geben und einen Eindruck über unsere Arbeitsweise vermitteln.<br>
+            Als gelernter Landschaftsgärtner, studierter Landschaftsplaner (B.ENG. Landschaftsentwicklung), FLL-zertifizierter Baumkontrolleur und Baumpfleger biete ich mit meinem Betrieb verschiedene Leistungen mit dem Schwerpunkt „Baum und Landschaft“ an.<br>
+            Zu unseren Auftraggebern gehören Privatpersonen, Behörden  und Gemeinden, Planungsbüros, Naturschutzverbände und Vereine. Daneben arbeiten wir regelmäßig als Subunternehmen für Betriebe aus dem grünen Bereich.<br>
+            Wir bieten unsere Leistungen im Raum Osnabrück, Krefeld und Friesland an.</p>
+            <h2>Danke für Ihr Interesse - wir freuen uns von Ihnen zu hören! </h2>
+  </div>
+  
+</div>
+
+
+    
+<!-- Container (CONTROL) -->
+<div id="control" class="bg-1">
+    <div class="container">
+  <h3 class="text-center">BAUMPFLEGE und FÄLLUNG</h3>
+    <h3 class="text-center">Baumpflege</h3>
+            <p class="text-center">Zur Entwicklung und Erhaltung oder auch zur Wiederherstellung eines verkehrssicheren und arttypischen Baumzustandes<span id="dots1">... </span><span id="more1">sind gelegentliche Baumpflegearbeiten erforderlich.
+            Bei Schäden durch etwa Sturm, Blitzschlag, Trockenheit oder durch Baumkrankheiten werden Baumpflegearbeiten zur Sicherung des Baumes z.T. zwingend notwendig.
+            Und auch die Ansprüche des Menschen hinsichtlich Erscheinungsbild, Sicherheit und Nutzen an die Bäume spielen eine große Rolle.
+            Durch fachgerechte Baumpflegemaßnahmen kann auf die Standortbedingungen, die Bedürfnisse des Baumes sowie die Ansprüche des Menschen individuell eingegangen werden. <br>
+            Gerne beraten wir Sie diesbezüglich vor Ort welche Maßnahmen für Ihren Baum/Baumbestand die förderlichsten sind.
+            Mit einer fachgerechten Umsetzung der entsprechenden Schnittmaßnahmen unter Berücksichtigung der ZTV- Baumpflege (Zusätzlich Technische Vertragsbedingungen)  und  Einhaltung  der naturschutzfachlichen Bestimmungen, gewährleisten wir eine sichere und schonende Ausführung der Baumarbeiten.<br>
+            </span>
+            <button onclick="readFunc1()" id="readBtn1">mehr lesen</button><br>
+            <h3 class="text-center">Baumfällung</h3>
+            <p class="text-center">Ist ein Baum aus verschiedenen Gründen nicht mehr zu erhalten, kann es nötig sein den Baum zu entfernen. Ob der Baum komplett entfernt werden sollte, <span id="dots2">... </span><span id="more2">oder ob durch einen Kronensicherungsschnitt Teile des Baumes zeitweilig noch erhalten werden können, ist situativ abzuwägen.
+            Die notwendigen Maßnahmen werden je nach Standortbedingungen vom Boden aus, per Hubsteiger oder per Seilklettertechnik (SKT) fachgerecht und versichert durchgeführt.<br>
+            Sofern der Platz nicht ausreicht einen Baum im Ganzen zu fällen, ist es auch auf engstem Raum möglich, den Baum Stück für Stück abzutragen. Befinden sich Objekte im Kronenbereich, können Äste, Kronen- und Stammteile zur Vermeidung von Schäden am Seil zu Boden gelassen werden.
+            Der Abtransport der anfallenden Grünabfalle und des Stammholzes kann vollständig oder auch in Teilen erfolgen. Beispielsweise kann das Ast- und Stammholz am Auftragsort verbleiben und auch die durch das Häckseln des Astwerks anfallenden Hackschnittel können als Mulchmatierial für Beete o.ä. genutzt werden.<br>
+            Wir beraten Sie gerne, ob und wie Ihr Baum/Baumbestand zu erhalten ist. Sofern eine Fällung einzelner Bäume notwendig wird, sprechen wir mit Ihnen die individuellen, erforderlichen Schritte im Hinblick einer fachgerechten Fällung durch. <br></span><button onclick="readFunc2()" id="readBtn2">mehr lesen</button></p>
+
+            
+  
+          </div>
+    </div>
+
+<!-- Container (TREES) -->
+<div id="trees" class="container text-center">
+  
+    <h3>BAUMKONTROLLE und ASP</h3>
+    <h3>Baumkontrolle</h3>
+<p>Die regelmäßige Sichtkontrolle von Bäumen im Sinne der Verkehrs&shy;sicherungs&shy;pflicht – die „Baumkontrolle/Regelkontrolle“ <span id="dots3">... </span><span id="more3">-  minimiert das Gefahrenpotential, welches von Bäumen ausgehen kann. Der jeweilige Baum wird dabei auf verkehrsgefährdende Schäden/Symptome an Wurzel, Stamm und Krone regelmäßig untersucht. Sofern erforderlich werden notwendige Baumpflegemaßnahmen wie bspw. Totholzentfernung, Lichtraumprofilschnitt o.ä. festgesetzt.
+Die Baumkontrolle wird zertifiziert, anhand der FLL-„Baumkontrollrichtline“ durchgeführt und kann im öffentlichen sowie privaten Bereich angeboten werden.<br></span><button onclick="readFunc3()" id="readBtn3">mehr lesen</button></p>
+<p><br></p>
+    <h3 style="letter-spacing: 5px;">Baumhöhlen&shy;kontrolle für Artenschutz&shy;rechtliche Prüfung (ASP)</h3>
+<p>Im Rahmen von Bauprojekten kommt es regelmäßig vor, dass Einzelbäume oder ganze Baumbestände gefällt werden.  Nicht selten<span id="dots4">... </span><span id="more4"> weisen ältere Bäume/Baumbestände Baumhöhlungen, Rindenrisse o.ä.  auf, die bspw. von Fledermäusen als Quartier genutzt werden. Vor möglichen Fällarbeiten, sind im Rahmen von Artenschutzrechtlichen Prüfungen solche Höhlungen auszumachen und auf Besatz zu kontrollieren. 
+Einzelbäume oder ein gesamter Baumbestand kann zuerst vom Boden aus auf mögliche Höhlungen überprüft werden. Als nächster Schritt können potenzielle Baumhöhlen per Seilklettertechnik sicher erreicht und mittels Video-Endoskop eingehend überprüft werden. 
+Ist kein Besatz vorhanden, werden die Höhlen sicher mit Schaumstoffstopfen verschlossen, sodass die Höhlen nicht mehr genutzt werden können und eine spätere Nutzung des Holzes problemlos gewährleistet ist. Im Anschluss kann der Baum zur Fällung frei gegeben werden.<br></span><button onclick="readFunc4()" id="readBtn4">mehr lesen</button></p>
+  </div>
+
+    <!-- Container (CARE) -->
+<div id="care" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">LANDSCHAFT und FORST</h3>
+      <h3 class="text-center">Landschaftspflege</h3>
+  <p class="text-center">Zur Erhaltung und Entwicklung von manchen Lebensräumen in der Landschaft bedarf es an Pflegemaßnahmen. Lebensräume oder<span id="dots5">... </span><span id="more5"> Landschaftsbestandteile wie bspw. Moore, Heiden, Streuobstwiesen oder Kopfbäume kommen häufig ohne Pflege nicht aus. Um einen entsprechenden Zielzustand zu erhalten bzw. zu erreichen, müssen geeignete Maßnahmen geplant und umgesetzt werden. <br>
+Solche Maßnahmen sind seitens der Planung oft sehr vielseitig und komplex und hinsichtlich deren Umsetzung auf Sonderstandorten nicht weniger herausfordernd. 
+Mit fundiertem Wissen als B.ENG.–Landschaftsentwicklung und umfangreicher Erfahrung aus diversen Maßnahmen können wir eine Vielzahl an Aufgaben sowohl bei Planung und Ausführung von Landschaftspflegemaßnahmen übernehmen. <br></span><button onclick="readFunc5()" id="readBtn5">mehr lesen</button></p>
+<p><br></p>
+      <h3 class="text-center">Forstdient&shy;leistungen</h3>
+<p class="text-center">Ebenso übernehmen wir Forstarbeiten auf Sonderstandorten und schwierig zugänglichen Flächen. Mit Kleingeräten<span id="dots6">... </span><span id="more6"> und intelligenten, effektiven Lösungen beginnt unser Leistungsspektrum dort, wo Großgeräte uneffektiv werden oder zu viel Schaden anrichten. Im Fokus steht dabei eine bodenschonende und bestandsschützende Arbeitsweise.<br></span><button onclick="readFunc6()" id="readBtn6">mehr lesen</button></p>
+</div>
+    </div>
+
+<!-- Container (NATURE) -->
+<div id="nature" class="container text-center">
+
+    <h3>NATUR und ARTENSCHUTZ</h3>
+      <p>Neben der Pflege von Lebensräumen besteht zum Schutz gefährdeter Tier- und Pflanzenarten häufig Handlungsbedarf,<span id="dots7">... </span><span id="more7"> der in Form von Natur- und Artenschutzmaßnahmen umgesetzt werden kann. <br>
+Ergänzend zum Arbeitsfeld der Landschaftspflege übernehmen wir auch die Planung und Umsetzung von Natur- und Artenschutzmaßnahmen, darunter auch Maßnahmen im Rahmen der Eingriffsregelung. <br>
+Darunter fallen Maßnahmen in Natur und Landschaft wie die Sanierung, Pflege oder Neuanlage von Lebensräumen wie Blühstreifen, Trockenmauern, Streuobstwiesen und Kleingewässern oder auch der Bau und das Ausbringen von diversen Nisthilfen.<br>
+Ebenso bieten wir Arbeiten auf privatem Grund wie beispielsweise die Beratung im eigenen Garten bis hin zur Planung und Ausführung eines „Naturgartens“ an.<br></span><button onclick="readFunc7()" id="readBtn7">mehr lesen</button></p>
+      </div>
+  
+
+<!-- Container (GALA) -->
+<div id="gala" class="bg-1">
+     <div class="container">
+  <h3 class="text-center">GARTEN und LANDSCHAFTSBAU</h3>
+  <p class="text-center">Neben dem Schwerpunkt „Baum und Landschaft“ sind Arbeiten aus dem Garten- und Landschaftsbau ebenfalls Betätigungsfeld<span id="dots8">... </span><span id="more8">. <br>
+Gerne übernehmen wir Ihre Pflasterarbeiten und fertigen fachgerecht Terrassen, Wege und Auffahrten die mit Naturstein, Klinker, Betonstein oder Kombinationen optisch ansprechend gestaltet werden. <br>
+Gerne verschönern wir Ihren Garten auch mit Holzdecks, Trockenmauern, Sichtschutz, Pflanzungen und vielem mehr. <br>
+Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahmen einer Garten-Neuanlage an. <br></span><button onclick="readFunc8()" id="readBtn8">mehr lesen</button></p>    
+</div>
+    </div>
+ 
+    
+<!-- Container (projekte) -->
+<div id="projects" class="text-center">
+    <h3 style="padding-top: 80px;">PROJEKTE</h3>
+    
+  <!-- Start of next Project XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->    
+  <div><br>
+  </div>   
+  <div class="flex-container">
+    <div class="flexi1">
+      <h3>SKT als sinnvolle Alternative zum Hubsteiger</h3>
+      
+    </div>
+    <div class="flexi2">
+      <h3>Die vielstämmige Kiefer</h3>
+      
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="flexi1">
+      
+      <p>Manchmal kann eine Fällung per Seilklettertechnik (SKT) auch an Standorten, die mit einem Hubsteiger erreichbar sind, die sinnvollere Wahl sein<span id="dots9">... </span><span id="more9">. In nur ca. 2 Stunden wurde die Spitzpappel fachgerecht per Seilklettertechnik abgetragen. <br>
+      Bei ca. 15m Entfernung zur Straße und gut 20m Baumhöhe hätte ein 7,5t LKW-Hubsteiger zum Einsatz kommen müssen. Dabei hätte die Straße gesperrt werden müssen was einen unnötigen Aufwand und zusätzliche Risiken mit sich bringt.
+      <br></span><button onclick="readFunc9()" id="readBtn9">mehr lesen</button></p>
+    </div>
+    <div class="flexi2">
+      
+      <p>Manchmal wartet bei der Fällung eines Baumes ein ganzer „Wald“ auf das Fäll-Team<span id="dots10">... </span><span id="more10">. Leider war der Baumstandort sehr beengt und mehrere Stämmlinge der Kiefer waren bereits bei Stürmen ausgebrochen – somit sollte der beeindruckende Baum leider entfernt werden. <br>
+      Insgesamt 17 Stämmlinge von ca. 20-40cm Durchmesser mussten auf engstem Raum abgetragen werden.  
+      <br></span><button onclick="readFunc10()" id="readBtn10">mehr lesen</button></p>
+    </div>
+
+  </div>
+  <div class="flex-container">
+    <div class="flexi1">
+     
+      <div class="carousel-inner">
+        
+          <img src="images/spitzpappel/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="image hover-shadow cursor">
+         <!--  <div class="carousel-caption">
+            <h3>John Doe</h3>
+          </div> -->
+
+      </div>
+      
+      <div id="myModal" class="modal">
+        <!--<span class="close cursor" onclick="closeModal()">&times;</span>-->
+        <div class="modal-content">
+          
+          <div class="mySlides">
+            
+            <div class="numbertext">1 / 4 <span class="close cursor" onclick="closeModal()">&times;</span></div>
+            <img src="images/spitzpappel/1.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4  <span class="close cursor" onclick="closeModal()">&times;</span></div>
+            <img src="images/spitzpappel/2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4  <span class="close cursor" onclick="closeModal()">&times;</span></div>
+            <img src="images/spitzpappel/3.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 4  <span class="close cursor" onclick="closeModal()">&times;</span></div>
+            <img src="images/spitzpappel/4.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+      
+          <div class="column">
+            <img class="demo cursor" src="images/spitzpappel/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/spitzpappel/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/spitzpappel/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/spitzpappel/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+    <div class="flexi2">
+        
+      <div class="carousel-inner">
+        
+        <img src="images/kiefer/1.jpg" style="width:100%" onclick="openModal2();currentSlide2(1)" class="image hover-shadow cursor">
+       <!--  <div class="carousel-caption">
+          <h3>John Doe</h3>
+        </div> -->
+
+    </div>
+    
+    <div id="myModal2" class="modal">
+      <!--<span class="close cursor" onclick="closeModal()">&times;</span>-->
+      <div class="modal-content">
+        
+        <div class="mySlides2">
+          
+          <div class="numbertext">1 / 4 <span class="close cursor" onclick="closeModal2()">&times;</span></div>
+          <img src="images/kiefer/1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides2">
+          <div class="numbertext">2 / 4  <span class="close cursor" onclick="closeModal2()">&times;</span></div>
+          <img src="images/kiefer/2.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides2">
+          <div class="numbertext">3 / 4  <span class="close cursor" onclick="closeModal2()">&times;</span></div>
+          <img src="images/kiefer/3.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides2">
+          <div class="numbertext">4 / 4  <span class="close cursor" onclick="closeModal2()">&times;</span></div>
+          <img src="images/kiefer/4.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="images/kiefer/1.jpg" style="width:100%" onclick="currentSlide2(1)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/kiefer/2.jpg" style="width:100%" onclick="currentSlide2(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/kiefer/3.jpg" style="width:100%" onclick="currentSlide2(3)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/kiefer/4.jpg" style="width:100%" onclick="currentSlide2(4)" alt="">
+        </div>
+      </div>
+    </div>
+
+    </div>      
+</div>
+</div>
+
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXX-->    
+<!-- Start of 3rd Project XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->    
+<div class="flex-container">
+  <div class="flexi2">
+    <h3>Stehendes Totholz für einen lebendigen Naturwald</h3>
+     
+  </div>
+  <div class="flexi1">
+    <h3>Wenig Platz für große Pappeln</h3>
+    
+</div>
+</div>
+
+<div class="flex-container">
+  <div class="flexi2">
+    
+    <p>Auch für den Artenschutz geht es mal hoch hinaus<span id="dots11">... </span><span id="more11">. Die Pappelreihe entlang einer Bahntrasse musste auf Grund von zunehmenden Problemen hinsichtlich der Standsicherheit gefällt werden. Der Standort der Pappeln befand sich in einem aus der Nutzung genommenen Naturwald in dem die Natur sich selbst überlassen werden soll. <br>
+      Als Artenschutzmaßnahme wurden zur Entwicklung von „Habitatbäumen“ 5 ausgewählte Pappeln bis auf ca. 18m abgetragen. Die verbleibenden Stammsockel stellen keine Gefahr mehr für die Bahntrasse dar und werden in Zukunft als „Habitatbäume“ Lebensraum für Flora und Fauna bieten.<br>
+      Die weiteren Pappeln entlang der Bahntrasse wurden anschließend windenunterstützt gefällt. Das gesamte Kronen- und Stammholz wurde nicht weiter aufgearbeitet oder gerückt, sodass es den natürlichen Kreisläufen im Wald erhalten bleibt.<br>
+      <br></span><button onclick="readFunc11()" id="readBtn11">mehr lesen</button></p>  
+  </div>
+  <div class="flexi1">
+    
+    <p>Wenn es irgendwie möglich ist, große Bäume im Ganzen oder zumindest in Teilen legen zu können, sollte man dies dem aufwendigen Abtragen vorziehen<span id="dots12">... </span><span id="more12">. <br>
+      In diesem Fall war für die 6 bis zu 40m hohen Spitzpappeln mit bis zu 120cm Durchmesser jedoch nur sehr wenig Platz verfügbar. Damit die Pappeln in ganzer Länge gelegt werden konnten, wurden sie bis auf ca. 25m aufgeastet. Anschließend wurden sie windenunterstützt in die äußerst schmale verfügbare Trasse gelegt. <br>
+      (Solche Standortbedingungen lassen keinen Raum für Ungenauigkeiten zu und sind auch für ein erfahrenes Team eine Herausforderung. Schön wenn solche Aufträge wie geplant und ohne jeglichen Schaden abgeschlossen werden können.)
+      <br></span><button onclick="readFunc12()" id="readBtn12">mehr lesen</button></p>
+</div>
+</div>
+
+
+  <div class="flex-container">
+    <div class="flexi2"  >
+    
+      <div class="carousel-inner">
+        
+        <img src="images/kiefer/1.jpg" style="width:100%" onclick="openModal3();currentSlide3(1)" class="image hover-shadow cursor">
+       <!--  <div class="carousel-caption">
+          <h3>John Doe</h3>
+        </div> -->
+
+    </div>
+    
+    <div id="myModal3" class="modal">
+      <!--<span class="close cursor" onclick="closeModal()">&times;</span>-->
+      <div class="modal-content">
+        
+        <div class="mySlides3">
+          
+          <div class="numbertext">1 / 4 <span class="close cursor" onclick="closeModal3()">&times;</span></div>
+          <img src="images/totholz/1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides3">
+          <div class="numbertext">2 / 4  <span class="close cursor" onclick="closeModal3()">&times;</span></div>
+          <img src="images/totholz/2.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides3">
+          <div class="numbertext">3 / 4  <span class="close cursor" onclick="closeModal3()">&times;</span></div>
+          <img src="images/totholz/3.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides3">
+          <div class="numbertext">4 / 4  <span class="close cursor" onclick="closeModal3()">&times;</span></div>
+          <img src="images/totholz/4.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="images/totholz/1.jpg" style="width:100%" onclick="currentSlide3(1)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/totholz/2.jpg" style="width:100%" onclick="currentSlide3(2)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/totholz/3.jpg" style="width:100%" onclick="currentSlide3(3)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/totholz/4.jpg" style="width:100%" onclick="currentSlide3(4)" alt="">
+        </div>
+      </div>
+    </div>     
+   
+    </div>
+  
+  <div class="flexi1">
+    
+                
+           
+  </div>
+        
+        
+</div>
+	
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXX-->    
+<!-- Start of 5th Project XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->  
+    
+     <div class="flex-container">
+     <div class="flexi1">
+	<h3>Neues Zuhause für Turmfalken</h3>
+            <p style="word-wrap: break-word;">Natürliche Nistmöglichkeiten werden in der heutigen Landschaft immer seltener<span id="dots13">... </span><span id="more13">. Zur Schaffung einer neuen Brutstätte für den Turmfalken wurden hier im Rahmen einer Artenschutz- bzw. Kompensations&shy;maßnahme zwei Turmfalken&shy;nisthilfen an einer Steilwand in ca. 25m Höhe angebracht.
+              <br></span><button onclick="readFunc13()" id="readBtn13">mehr lesen</button></p>     
+     </div>
+     <div class="flexi3">
+      <h3 style="padding-top: 100px; color: #fff;">Das war nur ein kleiner Auszug aus unserem <a href="#myPage" style="color: #587e3c;"> Leistungs&shy;bereich</a><br>
+		
+      </h3>
+     </div> 
+        
+    </div>
+    
+   
+
+
+
+   
+
+<div class="flex-container">
+        <div class="flexi1"  >
+          
+                
+           
+        </div>
+        
+        <div class="flexi3">
+            <h3 style="color: #fff;">
+              Erfahren Sie mehr über<br>
+              <ul>
+                <li><a href="#control" style="color: #587e3c;">Baumpflege und Fällung</a></li>
+                <li><a href="#trees" style="color: #587e3c;">Baum&shy;kon&shy;trolle und ASP</a></li>
+                <li><a href="#care" style="color: #587e3c;">Landschaft und Forst</a></li>
+                <li><a href="#nature" style="color: #587e3c;">Natur- und Arten&shy;schutz</a></li>
+                <li><a href="#gala" style="color: #587e3c;">Garten- und Land&shy;schafts&shy;bau</a></li>
+              </ul>
+              <br>
+              Oder <a href="#contact" style="color: #587e3c;">fragen Sie uns</a> einfach!
+            </h3>
+            </div>
+    </div>
+    <div style="background-color: #2d2d30;"><br></div>   
+    
+    
+    
+    
+    
+<!-- Container (CONTACT) -->
+<div id="contact" class="container text-center">
+  <h3>KONTAKT</h3>
+	<div class="" style="background-color: #2d2d30; padding: 5vh 5vw;">
+    <h3 style="color: #587e3c;">Garten- & Landschaftsbau</h3>
+    <h3 style="color: #587e3c;">Damian Dohr</h3>
+    <h3 ><a href="mailto:info@galabau-dohr.de" style="color: #fff;">info@galabau-dohr.de</a></h3>
+    <h3 style="color: #fff;">Mobil: <a href="tel:00491773880547" style="color: #fff;">0177 3880547</a></h3>
+  </div>
+</div> 
+    
+
+    
+ <!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="nach oben klettern">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+	<p><a href="impressum.html">Impressum</a> <a href="datenschutz.html">Datenschutzerklärung</a> <a href="cookies.html">Cookie-Hinweis</a></p>
+</footer>
+  
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#3c404d",
+      "text": "#d6d6d6"
+    },
+    "button": {
+      "background": "#587e3c"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "message": "Diese Website nutzt ausschließlich Cookies die zu ihrer Funktion notwendig sind. Durch die Nutzung stimmen sie deren Verwendung zu.",
+    "dismiss": "OK!",
+    "link": "https://www.galabau-dohr.de/cookies.html",
+    "href": "https://www.galabau-dohr.de/cookies.html"
+  }
+});
+</script>
+	
+<script>
+  function readFunc1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("readBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+} 
+
+function readFunc2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("readBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+} 
+
+function readFunc3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("readBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+
+function readFunc4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("readBtn4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+
+function readFunc5() {
+  var dots = document.getElementById("dots5");
+  var moreText = document.getElementById("more5");
+  var btnText = document.getElementById("readBtn5");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc6() {
+  var dots = document.getElementById("dots6");
+  var moreText = document.getElementById("more6");
+  var btnText = document.getElementById("readBtn6");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc7() {
+  var dots = document.getElementById("dots7");
+  var moreText = document.getElementById("more7");
+  var btnText = document.getElementById("readBtn7");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc8() {
+  var dots = document.getElementById("dots8");
+  var moreText = document.getElementById("more8");
+  var btnText = document.getElementById("readBtn8");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc9() {
+  var dots = document.getElementById("dots9");
+  var moreText = document.getElementById("more9");
+  var btnText = document.getElementById("readBtn9");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc10() {
+  var dots = document.getElementById("dots10");
+  var moreText = document.getElementById("more10");
+  var btnText = document.getElementById("readBtn10");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc11() {
+  var dots = document.getElementById("dots11");
+  var moreText = document.getElementById("more11");
+  var btnText = document.getElementById("readBtn11");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc12() {
+  var dots = document.getElementById("dots12");
+  var moreText = document.getElementById("more12");
+  var btnText = document.getElementById("readBtn12");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+function readFunc13() {
+  var dots = document.getElementById("dots13");
+  var moreText = document.getElementById("more13");
+  var btnText = document.getElementById("readBtn13");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+<script>
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+
+
+  function openModal2() {
+    document.getElementById("myModal2").style.display = "block";
+  }
+  
+  function closeModal2() {
+    document.getElementById("myModal2").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides2(slideIndex);
+  
+  function plusSlides2(n) {
+    showSlides2(slideIndex += n);
+  }
+  
+  function currentSlide2(n) {
+    showSlides2(slideIndex = n);
+  }
+  
+  function showSlides2(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides2");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+  
+  function openModal3() {
+    document.getElementById("myModal3").style.display = "block";
+  }
+  
+  function closeModal3() {
+    document.getElementById("myModal3").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides3(slideIndex);
+  
+  function plusSlides3(n) {
+    showSlides3(slideIndex += n);
+  }
+  
+  function currentSlide3(n) {
+    showSlides3(slideIndex = n);
+  }
+  
+  function showSlides3(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides3");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+
+  function openModal4() {
+    document.getElementById("myModal4").style.display = "block";
+  }
+  
+  function closeModal4() {
+    document.getElementById("myModal4").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides4(slideIndex);
+  
+  function plusSlides4(n) {
+    showSlides4(slideIndex += n);
+  }
+  
+  function currentSlide4(n) {
+    showSlides4(slideIndex = n);
+  }
+  
+  function showSlides4(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides4");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+  function openModal5() {
+    document.getElementById("myModal5").style.display = "block";
+  }
+  
+  function closeModal5() {
+    document.getElementById("myModal5").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides5(slideIndex);
+  
+  function plusSlides5(n) {
+    showSlides5(slideIndex += n);
+  }
+  
+  function currentSlide5(n) {
+    showSlides5(slideIndex = n);
+  }
+  
+  function showSlides5(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides5");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage'], .item a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("logo").style.width = "16vw";
+  } else {
+    document.getElementById("logo").style.width = "30vw";
+  }
+} 
+</script>
+</body>
+</html>
