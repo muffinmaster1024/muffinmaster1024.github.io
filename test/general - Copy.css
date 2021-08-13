@@ -522,7 +522,7 @@ img.hover-shadow {
   backface-visibility: hidden;
 }
 
-#more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11, #more12, #more13 {display: none;}
+#more0, #more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11, #more12, #more13 {display: none;}
 
 button {
   background-color: #587e3c; /* Green */
