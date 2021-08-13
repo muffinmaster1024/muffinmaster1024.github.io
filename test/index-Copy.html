@@ -154,9 +154,9 @@
     <h3>ÜBER UNS</h3>
       
             <p>Wir möchten Ihnen hier einen Überblick über unser Leistungsspektrum geben und einen Eindruck über unsere Arbeitsweise vermitteln.<br>
-            Als gelernter Landschaftsgärtner, studierter Landschaftsplaner (B.ENG. Landschaftsentwicklung), FLL-zertifizierter Baumkontrolleur und Baumpfleger biete ich mit meinem Betrieb verschiedene Leistungen mit dem Schwerpunkt „Baum und Landschaft“ an.<br>
+            Als gelernter Landschaftsgärtner, studierter Landschaftsplaner<span id="dots1">... </span><span id="more0"></span> (B.ENG. Landschaftsentwicklung), FLL-zertifizierter Baumkontrolleur und Baumpfleger biete ich mit meinem Betrieb verschiedene Leistungen mit dem Schwerpunkt „Baum und Landschaft“ an.<br>
             Zu unseren Auftraggebern gehören Privatpersonen, Behörden  und Gemeinden, Planungsbüros, Naturschutzverbände und Vereine. Daneben arbeiten wir regelmäßig als Subunternehmen für Betriebe aus dem grünen Bereich.<br>
-            Wir bieten unsere Leistungen im Raum Osnabrück, Krefeld und Friesland an.</p>
+            Wir bieten unsere Leistungen im Raum Osnabrück, Krefeld und Friesland an.<br></span><button onclick="readFunc0()" id="readBtn0">mehr lesen</button></p>
             <h2>Danke für Ihr Interesse - wir freuen uns von Ihnen zu hören! </h2>
   </div>
   
@@ -448,22 +448,22 @@ Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahme
         <div class="mySlides3">
           
           <div class="numbertext">1 / 4 <span class="close cursor" onclick="closeModal3()">&times;</span></div>
-          <img src="images/totholz/1.JPG" style="width:100%">
+          <img src="images/totholz/1.jpg" style="width:100%">
         </div>
     
         <div class="mySlides3">
           <div class="numbertext">2 / 4  <span class="close cursor" onclick="closeModal3()">&times;</span></div>
-          <img src="images/totholz/2.JPG" style="width:100%">
+          <img src="images/totholz/2.jpg" style="width:100%">
         </div>
     
         <div class="mySlides3">
           <div class="numbertext">3 / 4  <span class="close cursor" onclick="closeModal3()">&times;</span></div>
-          <img src="images/totholz/3.JPG" style="width:100%">
+          <img src="images/totholz/3.jpg" style="width:100%">
         </div>
         
         <div class="mySlides3">
           <div class="numbertext">4 / 4  <span class="close cursor" onclick="closeModal3()">&times;</span></div>
-          <img src="images/totholz/4.JPG" style="width:100%">
+          <img src="images/totholz/4.jpg" style="width:100%">
         </div>
         
         <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
@@ -475,16 +475,16 @@ Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahme
     
     
         <div class="column">
-          <img class="demo cursor" src="images/totholz/1.JPG" style="width:100%" onclick="currentSlide3(1)" alt="">
+          <img class="demo cursor" src="images/totholz/1.jpg" style="width:100%" onclick="currentSlide3(1)" alt="">
         </div>
         <div class="column">
-          <img class="demo cursor" src="images/totholz/2.JPG" style="width:100%" onclick="currentSlide3(2)" alt="">
+          <img class="demo cursor" src="images/totholz/2.jpg" style="width:100%" onclick="currentSlide3(2)" alt="">
         </div>
         <div class="column">
-          <img class="demo cursor" src="images/totholz/3.JPG" style="width:100%" onclick="currentSlide3(3)" alt="">
+          <img class="demo cursor" src="images/totholz/3.jpg" style="width:100%" onclick="currentSlide3(3)" alt="">
         </div>
         <div class="column">
-          <img class="demo cursor" src="images/totholz/4.JPG" style="width:100%" onclick="currentSlide3(4)" alt="">
+          <img class="demo cursor" src="images/totholz/4.jpg" style="width:100%" onclick="currentSlide3(4)" alt="">
         </div>
       </div>
     </div>     
@@ -596,7 +596,23 @@ window.cookieconsent.initialise({
 </script>
 	
 <script>
-  function readFunc1() {
+ function readFunc0() {
+  var dots = document.getElementById("dots0");
+  var moreText = document.getElementById("more0");
+  var btnText = document.getElementById("readBtn0");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "mehr lesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "weniger lesen";
+    moreText.style.display = "inline";
+  }
+} 
+ 
+ function readFunc1() {
   var dots = document.getElementById("dots1");
   var moreText = document.getElementById("more1");
   var btnText = document.getElementById("readBtn1");
