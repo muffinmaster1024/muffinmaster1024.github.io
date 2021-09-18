@@ -286,9 +286,9 @@ Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahme
       <div class="carousel-inner">
         
           <img src="images/spitzpappel/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="image hover-shadow cursor">
-         <!--  <div class="carousel-caption">
-            <h3>John Doe</h3>
-          </div> -->
+          <div class="carousel-caption" id="myModalCaption">
+            <h3>mehr Bilder</h3>
+          </div>
 
       </div>
       
@@ -371,9 +371,9 @@ Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahme
       <div class="carousel-inner">
         
         <img src="images/kiefer/1.jpg" style="width:100%" onclick="openModal2();currentSlide2(1)" class="image hover-shadow cursor">
-       <!--  <div class="carousel-caption">
-          <h3>John Doe</h3>
-        </div> -->
+        <div class="carousel-caption" id="myModalCaption2">
+          <h3>mehr Bilder</h3>
+        </div>
 
     </div>
     
@@ -491,9 +491,9 @@ Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahme
       <div class="carousel-inner">
         
         <img src="images/totholz/1.JPG" style="width:100%" onclick="openModal3();currentSlide3(1)" class="image hover-shadow cursor">
-       <!--  <div class="carousel-caption">
-          <h3>John Doe</h3>
-        </div> -->
+        <div class="carousel-caption" id="myModalCaption3">
+          <h3>mehr Bilder</h3>
+        </div>
 
     </div>
     
@@ -576,9 +576,9 @@ Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahme
     <div class="carousel-inner">
         
       <img src="images/pappeln/1.JPG" style="width:100%" onclick="openModal4();currentSlide4(1)" class="image hover-shadow cursor">
-     <!--  <div class="carousel-caption">
-        <h3>John Doe</h3>
-      </div> -->
+      <div class="carousel-caption" id="myModalCaption4">
+        <h3>mehr Bilder</h3>
+      </div>
 
   </div>
   
@@ -680,9 +680,9 @@ Darüber hinaus bieten wir auch die gesamte Ausführung aller Arbeiten  im Rahme
           <div class="carousel-inner">
         
             <img src="images/falke/1.JPG" style="width:100%" onclick="openModal5();currentSlide5(1)" class="image hover-shadow cursor">
-           <!--  <div class="carousel-caption">
-              <h3>John Doe</h3>
-            </div> -->
+            <div class="carousel-caption" id="myModalCaption5">
+              <h3>mehr Bilder</h3>
+            </div>
       
         </div>
         
@@ -1017,10 +1017,20 @@ function readFunc13() {
 <script>
   function openModal() {
     document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModalCaption").style.display = "none";
+    document.getElementById("myModalCaption2").style.display = "none";
+    document.getElementById("myModalCaption3").style.display = "none";
+    document.getElementById("myModalCaption4").style.display = "none";
+    document.getElementById("myModalCaption5").style.display = "none";
   }
   
   function closeModal() {
     document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModalCaption").style.display = "block";
+    document.getElementById("myModalCaption2").style.display = "block";
+    document.getElementById("myModalCaption3").style.display = "block";
+    document.getElementById("myModalCaption4").style.display = "block";
+    document.getElementById("myModalCaption5").style.display = "block";
   }
   
   var slideIndex = 1;
@@ -1056,10 +1066,20 @@ function readFunc13() {
 
   function openModal2() {
     document.getElementById("myModal2").style.display = "block";
+    document.getElementById("myModalCaption").style.display = "none";
+    document.getElementById("myModalCaption2").style.display = "none";
+    document.getElementById("myModalCaption3").style.display = "none";
+    document.getElementById("myModalCaption4").style.display = "none";
+    document.getElementById("myModalCaption5").style.display = "none";
   }
   
   function closeModal2() {
     document.getElementById("myModal2").style.display = "none";
+    document.getElementById("myModalCaption").style.display = "block";
+    document.getElementById("myModalCaption2").style.display = "block";
+    document.getElementById("myModalCaption3").style.display = "block";
+    document.getElementById("myModalCaption4").style.display = "block";
+    document.getElementById("myModalCaption5").style.display = "block";
   }
   
   var slideIndex = 1;
@@ -1094,10 +1114,20 @@ function readFunc13() {
   
   function openModal3() {
     document.getElementById("myModal3").style.display = "block";
+    document.getElementById("myModalCaption").style.display = "none";
+    document.getElementById("myModalCaption2").style.display = "none";
+    document.getElementById("myModalCaption3").style.display = "none";
+    document.getElementById("myModalCaption4").style.display = "none";
+    document.getElementById("myModalCaption5").style.display = "none";
   }
   
   function closeModal3() {
     document.getElementById("myModal3").style.display = "none";
+    document.getElementById("myModalCaption").style.display = "block";
+    document.getElementById("myModalCaption2").style.display = "block";
+    document.getElementById("myModalCaption3").style.display = "block";
+    document.getElementById("myModalCaption4").style.display = "block";
+    document.getElementById("myModalCaption5").style.display = "block";
   }
   
   var slideIndex = 1;
@@ -1132,10 +1162,20 @@ function readFunc13() {
 
   function openModal4() {
     document.getElementById("myModal4").style.display = "block";
+    document.getElementById("myModalCaption").style.display = "none";
+    document.getElementById("myModalCaption2").style.display = "none";
+    document.getElementById("myModalCaption3").style.display = "none";
+    document.getElementById("myModalCaption4").style.display = "none";
+    document.getElementById("myModalCaption5").style.display = "none";
   }
   
   function closeModal4() {
     document.getElementById("myModal4").style.display = "none";
+    document.getElementById("myModalCaption").style.display = "block";
+    document.getElementById("myModalCaption2").style.display = "block";
+    document.getElementById("myModalCaption3").style.display = "block";
+    document.getElementById("myModalCaption4").style.display = "block";
+    document.getElementById("myModalCaption5").style.display = "block";
   }
   
   var slideIndex = 1;
@@ -1169,10 +1209,20 @@ function readFunc13() {
 
   function openModal5() {
     document.getElementById("myModal5").style.display = "block";
+    document.getElementById("myModalCaption").style.display = "none";
+    document.getElementById("myModalCaption2").style.display = "none";
+    document.getElementById("myModalCaption3").style.display = "none";
+    document.getElementById("myModalCaption4").style.display = "none";
+    document.getElementById("myModalCaption5").style.display = "none";
   }
   
   function closeModal5() {
     document.getElementById("myModal5").style.display = "none";
+    document.getElementById("myModalCaption").style.display = "block";
+    document.getElementById("myModalCaption2").style.display = "block";
+    document.getElementById("myModalCaption3").style.display = "block";
+    document.getElementById("myModalCaption4").style.display = "block";
+    document.getElementById("myModalCaption5").style.display = "block";
   }
   
   var slideIndex = 1;
