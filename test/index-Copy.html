@@ -34,7 +34,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" data-toggle="dropdown">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
@@ -43,13 +43,13 @@
           <a class="navbar-brand" href="#myPage"><img id="logo" src="images/Logo_mit_Text2_Final.png" style="width: 30vw"></a>
     </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar" data-toggle="collapse">
       <ul class="nav navbar-nav navbar-right">
     
-        <li class="dropdown">
+        <li class="dropdown" data-toggle="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Leistungen
               <span class="caret"></span></a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" data-toggle="dropdown">
                 <li><a href="#control">Baumpflege <br>und Fällung</a></li>
                 <li><a href="#trees">Baumkontrolle<br> und ASP</a></li>
                 <li><a href="#care">Landschaft<br>und Forst</a></li>
@@ -83,11 +83,11 @@
       <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
+    
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">  
         
-     
-    <div class="item active">
+     <div class="item active">
         <a href="#control">
         <img src="images/control.JPG" alt="Baumpflege" width="100%" height="600">
         <div class="carousel-caption">
@@ -146,27 +146,28 @@
 
     
 <!-- Container (INFO) -->
-<div id="info" class="text-center flex-container">
-  <div class="flexi1" style="padding: 5vh 0vw; ">
-    <img src="images/container/ueberUns.jpg" style="padding: 5%; max-height: 50vh; max-width: 35vw;"> 
-  </div>
-<div class="flexi1" style="padding: 5vh 2vw; ">
-    <h3>ÜBER UNS</h3>
+<div id="info" class="text-center">
+  <h3 style="padding-top: 80px;">ÜBER UNS</h3>
+  <div class="flex-container">
+    <div class="flexi1" >
+      <img src="images/container/ueberUnsQ.jpg" style="max-height: 60vh; max-width: 45vw;"> 
+    </div>
+    <div class="flexi1" >
+      <p>Wir möchten Ihnen hier einen Überblick über unser Leistungsspektrum geben und einen Eindruck über unsere Arbeitsweise vermitteln.<br>
+        Als gelernter Landschaftsgärtner, studierter Landschaftsplaner<span id="dots0">... </span><span id="more0"> (B.ENG. Landschaftsentwicklung), FLL-zertifizierter Baumkontrolleur und Baumpfleger biete ich mit meinem Betrieb verschiedene Leistungen mit dem Schwerpunkt „Baum und Landschaft“ an.<br>
+        Zu unseren Auftraggebern gehören Privatpersonen, Behörden  und Gemeinden, Planungsbüros, Naturschutzverbände und Vereine. Daneben arbeiten wir regelmäßig als Subunternehmen für Betriebe aus dem grünen Bereich.<br>
+        Wir bieten unsere Leistungen im Raum Osnabrück, Krefeld und Friesland an.<br></span><button onclick="readFunc0()" id="readBtn0">mehr lesen</button></p>
       
-            <p>Wir möchten Ihnen hier einen Überblick über unser Leistungsspektrum geben und einen Eindruck über unsere Arbeitsweise vermitteln.<br>
-            Als gelernter Landschaftsgärtner, studierter Landschaftsplaner<span id="dots0">... </span><span id="more0"> (B.ENG. Landschaftsentwicklung), FLL-zertifizierter Baumkontrolleur und Baumpfleger biete ich mit meinem Betrieb verschiedene Leistungen mit dem Schwerpunkt „Baum und Landschaft“ an.<br>
-            Zu unseren Auftraggebern gehören Privatpersonen, Behörden  und Gemeinden, Planungsbüros, Naturschutzverbände und Vereine. Daneben arbeiten wir regelmäßig als Subunternehmen für Betriebe aus dem grünen Bereich.<br>
-            Wir bieten unsere Leistungen im Raum Osnabrück, Krefeld und Friesland an.<br></span><button onclick="readFunc0()" id="readBtn0">mehr lesen</button></p>
-            <h2>Danke für Ihr Interesse - wir freuen uns von Ihnen zu hören! </h2>
+      <h2>Danke für Ihr Interesse - wir freuen uns von Ihnen zu hören! </h2>
+    </div>
   </div>
-  
 </div>
 
 
     
 <!-- Container (CONTROL) -->
 <div id="control" class="bg-1">
-    <div class="container">
+  <div class="container">
   <h3 class="text-center">BAUMPFLEGE und FÄLLUNG</h3>
     <h3 class="text-center">Baumpflege</h3>
             <p class="text-center">Zur Entwicklung und Erhaltung oder auch zur Wiederherstellung eines verkehrssicheren und arttypischen Baumzustandes<span id="dots1">... </span><span id="more1">sind gelegentliche Baumpflegearbeiten erforderlich.
@@ -207,25 +208,32 @@ Ist kein Besatz vorhanden, werden die Höhlen sicher mit Schaumstoffstopfen vers
 <div id="care" class="bg-1">
   <div class="container">
     <h3 class="text-center">LANDSCHAFT und FORST</h3>
-      <h3 class="text-center">Landschaftspflege</h3>
-  <p class="text-center">Zur Erhaltung und Entwicklung von manchen Lebensräumen in der Landschaft bedarf es an Pflegemaßnahmen. Lebensräume oder<span id="dots5">... </span><span id="more5"> Landschaftsbestandteile wie bspw. Moore, Heiden, Streuobstwiesen oder Kopfbäume kommen häufig ohne Pflege nicht aus. Um einen entsprechenden Zielzustand zu erhalten bzw. zu erreichen, müssen geeignete Maßnahmen geplant und umgesetzt werden. <br>
-Solche Maßnahmen sind seitens der Planung oft sehr vielseitig und komplex und hinsichtlich deren Umsetzung auf Sonderstandorten nicht weniger herausfordernd. 
-Mit fundiertem Wissen als B.ENG.–Landschaftsentwicklung und umfangreicher Erfahrung aus diversen Maßnahmen können wir eine Vielzahl an Aufgaben sowohl bei Planung und Ausführung von Landschaftspflegemaßnahmen übernehmen. <br></span><button onclick="readFunc5()" id="readBtn5">mehr lesen</button></p>
-<p><br></p>
-      <h3 class="text-center">Forstdient&shy;leistungen</h3>
-<p class="text-center">Ebenso übernehmen wir Forstarbeiten auf Sonderstandorten und schwierig zugänglichen Flächen. Mit Kleingeräten<span id="dots6">... </span><span id="more6"> und intelligenten, effektiven Lösungen beginnt unser Leistungsspektrum dort, wo Großgeräte uneffektiv werden oder zu viel Schaden anrichten. Im Fokus steht dabei eine bodenschonende und bestandsschützende Arbeitsweise.<br></span><button onclick="readFunc6()" id="readBtn6">mehr lesen</button></p>
+    <h3 class="text-center">Landschaftspflege</h3>
+    <p class="text-center">Zur Erhaltung und Entwicklung von manchen Lebensräumen in der Landschaft bedarf es an Pflegemaßnahmen. Lebensräume oder<span id="dots5">... </span><span id="more5"> Landschaftsbestandteile wie bspw. Moore, Heiden, Streuobstwiesen oder Kopfbäume kommen häufig ohne Pflege nicht aus. Um einen entsprechenden Zielzustand zu erhalten bzw. zu erreichen, müssen geeignete Maßnahmen geplant und umgesetzt werden. <br>
+      Solche Maßnahmen sind seitens der Planung oft sehr vielseitig und komplex und hinsichtlich deren Umsetzung auf Sonderstandorten nicht weniger herausfordernd. 
+      Mit fundiertem Wissen als B.ENG.–Landschaftsentwicklung und umfangreicher Erfahrung aus diversen Maßnahmen können wir eine Vielzahl an Aufgaben sowohl bei Planung und Ausführung von Landschaftspflegemaßnahmen übernehmen. <br></span><button onclick="readFunc5()" id="readBtn5">mehr lesen</button></p>
+    <p><br></p>
+    <h3 class="text-center">Forstdient&shy;leistungen</h3>
+    <p class="text-center">Ebenso übernehmen wir Forstarbeiten auf Sonderstandorten und schwierig zugänglichen Flächen. Mit Kleingeräten<span id="dots6">... </span><span id="more6"> und intelligenten, effektiven Lösungen beginnt unser Leistungsspektrum dort, wo Großgeräte uneffektiv werden oder zu viel Schaden anrichten. Im Fokus steht dabei eine bodenschonende und bestandsschützende Arbeitsweise.<br></span><button onclick="readFunc6()" id="readBtn6">mehr lesen</button></p>
+  </div>
 </div>
-    </div>
 
 <!-- Container (NATURE) -->
-<div id="nature" class="container text-center">
-
-    <h3>NATUR und ARTENSCHUTZ</h3>
+<div id="nature" class="text-center">
+  
+  <div class="flex-container">
+    <div class="flexi1" >
+      <img src="images/container/natureQ.jpg" style="max-height: 60vh; max-width: 45vw;"> 
+    </div>
+    <div class="flexi1" >
+      <h3>NATUR und ARTENSCHUTZ</h3>
       <p>Neben der Pflege von Lebensräumen besteht zum Schutz gefährdeter Tier- und Pflanzenarten häufig Handlungsbedarf, <span id="dots7">... </span><span id="more7"> der in Form von Natur- und Artenschutzmaßnahmen umgesetzt werden kann. <br>
-Ergänzend zum Arbeitsfeld der Landschaftspflege übernehmen wir auch die Planung und Umsetzung von Natur- und Artenschutzmaßnahmen, darunter auch Maßnahmen im Rahmen der Eingriffsregelung. <br>
-Darunter fallen Maßnahmen in Natur und Landschaft wie die Sanierung, Pflege oder Neuanlage von Lebensräumen wie Blühstreifen, Trockenmauern, Streuobstwiesen und Kleingewässern oder auch der Bau und das Ausbringen von diversen Nisthilfen.<br>
-Ebenso bieten wir Arbeiten auf privatem Grund wie beispielsweise die Beratung im eigenen Garten bis hin zur Planung und Ausführung eines „Naturgartens“ an.<br></span><button onclick="readFunc7()" id="readBtn7">mehr lesen</button></p>
-      </div>
+        Ergänzend zum Arbeitsfeld der Landschaftspflege übernehmen wir auch die Planung und Umsetzung von Natur- und Artenschutzmaßnahmen, darunter auch Maßnahmen im Rahmen der Eingriffsregelung. <br>
+        Darunter fallen Maßnahmen in Natur und Landschaft wie die Sanierung, Pflege oder Neuanlage von Lebensräumen wie Blühstreifen, Trockenmauern, Streuobstwiesen und Kleingewässern oder auch der Bau und das Ausbringen von diversen Nisthilfen.<br>
+        Ebenso bieten wir Arbeiten auf privatem Grund wie beispielsweise die Beratung im eigenen Garten bis hin zur Planung und Ausführung eines „Naturgartens“ an.<br></span><button onclick="readFunc7()" id="readBtn7">mehr lesen</button></p>
+    </div>
+  </div>
+</div>
   
 
 <!-- Container (GALA) -->
